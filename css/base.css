@@ -1,0 +1,10 @@
+body {
+  /*background-color: #CC9966;*/
+  background-image: url(/img/bg/01.jpg);
+  background-repeat: no-repeat;
+}
+
+.temp {
+  border: 1px solid red;
+
+}
