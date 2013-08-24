@@ -7,18 +7,41 @@ body {
 }
 
 #bs-nav {
-  margin-top: 50px;
+
 
 }
 
-#bs-nav-list {
-  margin-top: 40px;
-
+#sip-nav {
+  background: none;
+  border: none;
 }
 
-#bs-nav-list a {
+#sip-nav .navbar-brand {
+  /*text-indent: -9999px;*/
+}
+
+#sip-nav li a {
+  color: #eee;
+  font-size: 18px;
+}
+
+#sip-nav li.active a {
+  background: none;
   color: #fff;
+  font-weight: bold;
 }
+
+.sip-outer {
+  background-color: #fff;
+  /*border-radius: 1px;*/
+  box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+  /*min-height: 400px;*/
+}
+
+.sip-inner {
+
+}
+
 
 
 .main {

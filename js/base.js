@@ -1,11 +1,13 @@
 var nav_map = {
     home:{
         url:'/',
-        title:'SiP Boulder'
+        title:'SiP Boulder',
+        partial:'carousel'
     },
     menu:{
         url:'/menu.html',
-        title:'SiP Boulder'
+        title:'SiP Boulder',
+        partial:'menu'
     }
 };
 
@@ -19,14 +21,26 @@ function getPageData(path) {
 }
 
 
-$('#bs-nav').load('partials/nav.html', function(){
-    var anchor, current_page = getPageData(window.location);
-    $('#bs-nav-list > li').each(function() {
-        anchor = $(this).find('a');
-        if(anchor.attr('href') == current_page.url) {
-            $(this).addClass('active');
-        }
 
+
+
+$(function() {
+    var anchor, page = getPageData(window.location);
+    document.title = page.title;
+
+
+    $('#nav').load('partials/nav.html', function(){
+        $('#bs-nav-list > li').each(function() {
+            anchor = $(this).find('a');
+            if(anchor.attr('href') == page.url) {
+                $(this).addClass('active');
+            }
+
+        });
     });
+
+
+    $('#main').load('partials/' + page.partial + '.html', function() {});
+
+    $('#footer').load('partials/footer.html', function() {});
 });
-$('#bs-main').load('partials/menu.html', function() {});
