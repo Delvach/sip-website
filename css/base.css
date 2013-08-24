@@ -2,9 +2,34 @@ body {
   /*background-color: #CC9966;*/
   background-image: url(/img/bg/01.jpg);
   background-repeat: no-repeat;
+  background-position: center top;
+  font-family: 'Lato', sans-serif;
 }
 
+#bs-nav {
+  margin-top: 50px;
+
+}
+
+#bs-nav-list {
+  margin-top: 40px;
+
+}
+
+#bs-nav-list a {
+  color: #fff;
+}
+
+
+.main {
+  /*background-color: red;*/
+  border: 10px solid white;
+  box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+  height: 400px;
+  margin-top: 120px;
+}
+
+
 .temp {
-  border: 1px solid red;
 
 }

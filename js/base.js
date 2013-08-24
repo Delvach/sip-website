@@ -24,8 +24,9 @@ $('#bs-nav').load('partials/nav.html', function(){
     $('#bs-nav-list > li').each(function() {
         anchor = $(this).find('a');
         if(anchor.attr('href') == current_page.url) {
-            $(this).addClass('temp');
+            $(this).addClass('active');
         }
 
     });
 });
+$('#bs-main').load('partials/menu.html', function() {});
