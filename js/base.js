@@ -68,15 +68,41 @@ function initCarousel() {
 function initMorningMenu() {
     $.getJSON('data/coffee.json', {cache:false}, function(menu_data) {
         console.log(menu_data);
-        createMenu('#sip-menu', menu_data);
+        createMenu('#sip-menu', menu_data, true);
     })
-     .fail(function( jqxhr, textStatus, error ) {
-      var err = textStatus + ', ' + error;
-      console.log( "Request Failed: " + err);
+        .fail(function( jqxhr, textStatus, error ) {
+          var err = textStatus + ', ' + error;
+          console.log( "Request Failed: " + err);
+        });
+    $.getJSON('data/breakfast.json', {cache:false}, function(food_data) {
+        createSimpleMenu('#sip-breakfast', food_data);
     });
+    $.getJSON('data/addons.json', {cache:false}, function(addon_data) {
+        createSimpleMenu('#sip-addons', addon_data);
+    }).fail(function( jqxhr, textStatus, error ) {
+          var err = textStatus + ', ' + error;
+          console.log( "Request Failed: " + err);
+        });
+
+
 }
 
-function createMenu(containerID, menu) {
+function createSimpleMenu(containerID, menu) {
+    var target = $(containerID),
+        table = $('<table>', {class:'table menu-table'}),
+        tableBody = $('<tbody>'),
+        tr;
+    target.append($('<h1>', {text:menu.title}));
+    for(i in menu.items) {
+        tr = $('<tr>');
+        tr.append($('<td>', {text:menu.items[i].title}));
+        tr.append($('<td>', {text:menu.items[i].price}));
+        tableBody.append(tr);
+    }
+    target.append(table.append(tableBody));
+}
+
+function createMenu(containerID, menu, is_complex) {
     var descriptionContents,
         full_item,
         h1,
@@ -87,6 +113,8 @@ function createMenu(containerID, menu) {
         tableBody,
         tr,
         td1, td2, td3, target = $(containerID);
+
+
     for(section in menu) {
         h1 = $('<h1>').text(menu[section].category);
         //h2 = $('<h2>').text(menu[section].sizes);
@@ -95,12 +123,17 @@ function createMenu(containerID, menu) {
         table = $('<table>', {class:'table menu-table'});
         //target.append(h1.append($('<span>').text(' ('+ menu[section].sizes + ')')));
 
-        tableBody = $('<thead>');
-        td1 = $('<th>', {class:'food_col_1'});
-        td2 = $('<th>', {text:menu[section].sizes.sm,class:'food_col_2'});
-        td3 = $('<th>', {text:menu[section].sizes.lg,class:'food_col_3'});
-        table.append(tableBody.append($('<tr>').append(td1).append(td2).append(td3)));
-
+        if(is_complex) {
+            tableBody = $('<thead>');
+            td1 = $('<th>', {class:'food_col_1'});
+            td2 = $('<th>', {text:menu[section].sizes.sm,class:'food_col_2'});
+            tr  = $('<tr>').append(td1).append(td2);
+            //tableBody.append($('<tr>').append(td1).append(td2).append(td3))
+            if(is_complex) {
+                tr.append($('<th>', {text:menu[section].sizes.lg,class:'food_col_3'}));
+            }
+            table.append(tableBody.append(tr));
+        }
         for(i in menu[section].items) {
             strong = $('<strong>', {text:menu[section].items[i].title});
             descriptionContents = menu[section].items[i].description ?
