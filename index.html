@@ -4,7 +4,7 @@
   <title>SiP Boulder</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic' rel='stylesheet' type='text/css'>-->
-  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic|Josefin+Slab:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic|Josefin+Slab:400,700|Lora' rel='stylesheet' type='text/css'>
 
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -20,7 +20,75 @@
 
 <div id="nav"></div>
 
-<div id="main" class="container sip-container"></div>
+<div id="main" class="container sip-container">
+
+
+
+
+
+
+  <div id="sip-carousel" class="carousel slide">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#sip-carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#sip-carousel" data-slide-to="1"></li>
+      <li data-target="#sip-carousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="img/carousel/slide_1.jpg" alt="...">
+        <div class="carousel-caption">
+          <h3>Delicious Food!</h3>
+          <p>Now available without salmonela</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="img/carousel/slide_2.jpg" alt="...">
+        <div class="carousel-caption">
+          <h3>Wonderful Beverages</h3>
+          <p>Sub text</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="img/carousel/slide_3.jpg" alt="...">
+        <div class="carousel-caption">
+          <h3>Wonderful Beverages</h3>
+          <p>Sub text</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#sip-carousel" data-slide="prev">
+      <span class="icon-prev"></span>
+    </a>
+    <a class="right carousel-control" href="#sip-carousel" data-slide="next">
+      <span class="icon-next"></span>
+    </a>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4" id="promo1">
+        <div class="inner">Food</div>
+      </div>
+      <div class="col-sm-4" id="promo2"><div class="inner">Drink</div></div>
+      <div class="col-sm-4" id="promo3"><div class="inner">Clowns</div></div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+</div>
 <div id="footer" class="container"></div>
 
 <script src="js/jquery-1.10.2.min.js"></script>

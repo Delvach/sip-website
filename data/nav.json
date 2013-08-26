@@ -1,7 +1,7 @@
 {
     "home":{
         "url":"/",
-        "title":"Home",
+        "title":"Welcome!",
         "pageTitle":"SiP Boulder",
         "partial":"carousel",
         "init":"initCarousel();"
@@ -9,14 +9,14 @@
     "menu":{
         "url":"/breakfast_menu.html",
         "title":"Coffee & Breakfast",
-        "pageTitle":"SiP Boulder",
-        "partial":"menu",
-        "init":""
+        "pageTitle":"SiP Boulder - Coffee & Breakfast Menu",
+        "partial":"menu_morning",
+        "init":"initMorningMenu();"
     },
     "drinks":{
         "url":"/drinks.html",
         "title":"Drinks & Appetizers",
-        "pageTitle":"SiP Boulder - Drinks",
+        "pageTitle":"SiP Boulder - Drinks & Appetizers",
         "partial":"drinks",
         "init":""
     }

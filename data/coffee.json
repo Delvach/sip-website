@@ -1,0 +1,231 @@
+{
+    "espresso": {
+        "category":"Espresso Drinks",
+        "sizes":{
+            "sm":"12 oz",
+            "lg":"16 oz"
+        },
+        "items":[
+            {
+                "title":"Café Latte",
+                "description":"Espresso and steamed milk",
+                "price":{
+                    "sm":"3.50",
+                    "lg":"3.75"
+                }
+            },
+            {
+                "title":"Café Mocha",
+                "description":"Like the café latte but with chocolaty goodness",
+                "price":{
+                    "sm":"3.75",
+                    "lg":"4.00"
+                }
+            },
+            {
+                "title":"Cappuccino",
+                "description":"Espresso topped to the brim with steamed milk foam",
+                "price":{
+                    "sm":"3.50",
+                    "lg":"3.75"
+                }
+            },
+            {
+                "title":"Americano",
+                "description":"Espresso with hot water",
+                "price":{
+                    "sm":"2.00",
+                    "lg":"2.25"
+                }
+            },
+            {
+                "title":"Latte Macchiato",
+                "description":"Steamed foam marked with a single or double espresso shot",
+                "price":{
+                    "sm":"2.75",
+                    "lg":"3.00"
+                }
+            },
+            {
+                "title":"Espresso",
+                "description":"Single / Double shot of espresso",
+                "price":{
+                    "sm":"2.00",
+                    "lg":"2.25"
+                }
+            },
+            {
+                "title":"Poor Man’s Mocha",
+                "description":"Café Au Lait with chocolate syrup",
+                "price":{
+                    "sm":"3.60",
+                    "lg":"3.85"
+                }
+            }
+
+        ]
+    },
+    "coffee": {
+        "category":"Coffee Drinks",
+        "sizes":{
+            "sm":"12 oz",
+            "lg":"16 oz"
+        },
+        "items":[
+            {
+                "title":"Brewed Coffee  (regular / decaf)",
+                "description":"",
+                "price":{
+                    "sm":"2.00",
+                    "lg":"2.25"
+                }
+            },
+            {
+                "title":"Café Au Lait",
+                "description":"Half steamed milk and brewed coffee",
+                "price":{
+                    "sm":"2.50",
+                    "lg":"3.00"
+                }
+            }
+        ]
+    },
+    "hot": {
+        "category":"Other Hot Beverages",
+        "sizes":{
+            "sm":"12 oz",
+            "lg":"16 oz"
+        },
+        "items":[
+            {
+                "title":"Chai Latte",
+                "description":"Chai tea blend with steamed milk",
+                "price":{
+                    "sm":"3.25",
+                    "lg":"3.50"
+                }
+            },
+            {
+                "title":"Hot Chocolate",
+                "description":"Chocolate, steamed milk and whipped cream",
+                "price":{
+                    "sm":"2.50",
+                    "lg":"3.00"
+                }
+            },
+            {
+                "title":"Tea",
+                "description":"Assorted selection of hot tea",
+                "price":{
+                    "sm":"2.50",
+                    "lg":""
+                }
+            },
+            {
+                "title":"Cambric",
+                "description":"Hot tea with steamed milk",
+                "price":{
+                    "sm":"3.00",
+                    "lg":""
+                }
+            }
+        ]
+    },
+    "cold": {
+        "category":"Cold Drinks",
+        "sizes":{
+            "sm":"",
+            "lg":""
+        },
+        "items":[
+            {
+                "title":"Iced Coffee",
+                "description":"Our house brewed  coffee over ice",
+                "price":{
+                    "sm":"",
+                    "lg":"2.25"
+                }
+            },
+            {
+                "title":"Iced Latte",
+                "description":"Espresso and milk served over ice",
+                "price":{
+                    "sm":"",
+                    "lg":"3.50"
+                }
+            },
+            {
+                "title":"Iced Mocha",
+                "description":"Espresso and milk with chocolate over Ice",
+                "price":{
+                    "sm":"",
+                    "lg":"3.75"
+                }
+            },
+            {
+                "title":"Iced Americano",
+                "description":"Espresso and water over ice",
+                "price":{
+                    "sm":"",
+                    "lg":"2.50"
+                }
+            },
+            {
+                "title":"Iced Chai Latte",
+                "description":"Chai tea blend with milk over ice",
+                "price":{
+                    "sm":"",
+                    "lg":"3.50"
+                }
+            },
+            {
+                "title":"Iced Tea",
+                "description":"Brewed black or green iced tea",
+                "price":{
+                    "sm":"",
+                    "lg":"2.50"
+                }
+            },
+            {
+                "title":"Izze",
+                "description":"Apple, Clementine, Blackberry",
+                "price":{
+                    "sm":"",
+                    "lg":"2.00"
+                }
+            },
+            {
+                "title":"Coke / Diet Coke",
+                "description":"",
+                "price":{
+                    "sm":"",
+                    "lg":"1.25"
+                }
+            },
+            {
+                "title":"San Pellegrino",
+                "description":"Orange / Lemon",
+                "price":{
+                    "sm":"",
+                    "lg":"2.25"
+                }
+            },
+            {
+                "title":"Zevia Soda",
+                "description":"Grape / Cream Soda / Ginger / Root Beer",
+                "price":{
+                    "sm":"",
+                    "lg":"2.25"
+                }
+            },
+            {
+                "title":"Bottle Water",
+                "description":"",
+                "price":{
+                    "sm":"",
+                    "lg":"1.00"
+                }
+            }
+        ]
+    }
+}
