@@ -14,11 +14,11 @@
         "init":"initMorningMenu();"
     },
     "drinks":{
-        "url":"/drinks.html",
+        "url":"/beer_menu.html",
         "title":"Drinks & Appetizers",
         "pageTitle":"SiP Boulder - Drinks & Appetizers",
         "partial":"drinks",
-        "init":""
+        "init":"initEveningMenu();"
     }
 
 }

@@ -87,12 +87,55 @@ function initMorningMenu() {
 
 }
 
+
+function initEveningMenu() {
+    $.getJSON('data/beer.json', {cache:false}, function(beer_data) {
+        createBeerMenu('#sip-menu', beer_data);
+        console.log(beer_data);
+    }).fail(function( jqxhr, textStatus, error ) {
+          var err = textStatus + ', ' + error;
+          console.log( "Request Failed: " + err);
+        });
+}
+
+
+function createBeerMenu(containerID, menu) {
+    var target = $(containerID),
+        table = $('<table>', {class:'table menu-table'}),
+        tableBody = $('<tbody>'),
+        td, tr, displayType;
+    target.append($('<h2>', {text:menu.title}));
+    for(i in menu.types) {
+        tr = $('<tr>');
+        displayTitle = menu.types[i].title;
+        if(menu.types[i].price) displayTitle += ' - $' +  menu.types[i].price;
+        td = $('<td>', {colspan:3,html:$('<h3>',{text:displayTitle,class:'text-center'})});
+        //td = $('<td>', {colspan:2,text:"text"});
+//        tr.append($('<td>', {text:menu.types[i].title})).append(td);
+        //tr.append($('<td>', {text:menu.types[i].price}));
+        tr.append(td);
+        tableBody.append(tr);
+        menu.types[i].items.forEach(function(val, idx) {
+            tr = $('<tr>');
+            tr.append($('<td>', {text:val.title}));
+            tr.append($('<td>', {text:val.origin}));
+            tr.append($('<td>', {text:val.abv}));
+            tableBody.append(tr);
+            tableBody.append($('<tr>').append($('<td>', {colspan:3,text:val.description})));
+        });
+
+
+    }
+    target.append(table.append(tableBody));
+}
+
+
 function createSimpleMenu(containerID, menu) {
     var target = $(containerID),
         table = $('<table>', {class:'table menu-table'}),
         tableBody = $('<tbody>'),
         tr;
-    target.append($('<h1>', {text:menu.title}));
+    target.append($('<h2>', {text:menu.title}));
     for(i in menu.items) {
         tr = $('<tr>');
         tr.append($('<td>', {text:menu.items[i].title}));

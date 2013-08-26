@@ -1,0 +1,133 @@
+{
+    "title":"Beer",
+    "types":{
+        "draft":{
+            "title":"Draft",
+            "price":"5.00",
+            "items":[
+                {
+                    "title":"Upslope Craft Lager",
+                    "description":"Light bodied American lager, crisp malt, subtle Saaz hops",
+                    "origin":"Boulder",
+                    "abv":"2.8",
+                    "price":""
+                },
+                {
+                    "title":"Odells 90 Schilling",
+                    "description":"Medium bodied amber ale, inspired lighter style Scottish ale",
+                    "origin":"Ft. Collins",
+                    "abv":"5.3",
+                    "price":""
+                },
+                {
+                    "title":"Great Divide Hoss Rye Lager",
+                    "description":"German inspired, rich layered malty notes, crisp & dry",
+                    "origin":"Denver",
+                    "abv":"6.2",
+                    "price":""
+                },
+                {
+                    "title":"Uinta Hop Notch IPA",
+                    "description":"Bold, refreshing, abundance of hops, smooth malt profile",
+                    "origin":"Salt Lake",
+                    "abv":"7.3",
+                    "price":""
+                },
+                {
+                    "title":"Great Divide Hercules Double IPA",
+                    "description":"Big HOPS, well balanced, nutty, malty and sweetness",
+                    "origin":"Denver",
+                    "abv":"10",
+                    "price":""
+                }
+            ]
+        },
+        "cans":{
+            "title":"Cans",
+            "price":"4.00",
+            "items":[
+                {
+                    "title":"Boulevard Wheat",
+                    "description":"american style wheat, unfiltered, natural citrus flavor (16oz)",
+                    "origin":"Kansas City",
+                    "abv":"4.4",
+                    "price":"4.50"
+                },
+                {
+                    "title":"SKA True Blonde Ale",
+                    "description":"medium bodied blonde ale, touch of local honey, citrus hops",
+                    "origin":"Durango",
+                    "abv":"5.3",
+                    "price":""
+                },
+                {
+                    "title":"Uinta Wyld Extra Pale Ale",
+                    "description":"lighter bodied pale ale, aggressively dry hopped, organic - 29 IBU",
+                    "origin":"Salt Lake",
+                    "abv":"",
+                    "price":""
+                },
+                {
+                    "title":"SKA ESB (english special bitter)",
+                    "description":"crisp first sip, hoppy tongue, malty finish",
+                    "origin":"Durango",
+                    "abv":"5.7",
+                    "price":""
+                },
+                {
+                    "title":"Santa Fe Happy Camper IPA",
+                    "description":"spicy / citric / floral infusion of hop character, balanced",
+                    "origin":"Santa Fe",
+                    "abv":"6.6",
+                    "price":""
+                },
+                {
+                    "title":"SKA Modus Hoperandi IPA",
+                    "description":"citrus aromas, pine scents, bitter & hoppy, smooth finish",
+                    "origin":"Durango",
+                    "abv":"6.8",
+                    "price":""
+                },
+                {
+                    "title":"Uinta Baba Black Lager",
+                    "description":"robust & smooth, full flavored lager, pitch black in color, organic - 32 IBU",
+                    "origin":"Salt Lake",
+                    "abv":"",
+                    "price":""
+                },
+                {
+                    "title":"Upslope Brown",
+                    "description":"medium bodied, rich & malty, assertive hops, smooth/dry finish",
+                    "origin":"Boulder",
+                    "abv":"6.7",
+                    "price":""
+                }
+            ]
+        },
+        "features":{
+            "title":"Features",
+            "price":"",
+            "items":[
+                {
+                    "title":"Upslope Imperial IPA 19.2oz",
+                    "description":"subtle flavors of tropical fruit balanced with citrus/pine hop notes",
+                    "origin":"Boulder",
+                    "abv":"10",
+                    "price":"11"
+                },
+                {
+                    "title":"River North 'J Marie' Farmhouse Ale 22oz",
+                    "description":"saison, apricot on the nose, malty backbone, dry finish",
+                    "origin":"Denver",
+                    "abv":"7.5",
+                    "price":"13"
+                }
+            ]
+        }
+    }
+}
+
+
+
+
+
