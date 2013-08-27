@@ -21,7 +21,7 @@ $(function() {
 
             var curr_page = getPageData(window.location.pathname, nav_data);
             var nav  = $('ul#bs-nav-list');
-            document.title = curr_page.pageTitle;
+            if(curr_page.pageTitle) document.title += ' - ' + curr_page.pageTitle;
 
             $.each(nav_data, function(idx, val) {
 //                if(val.url != '/') {
@@ -32,7 +32,8 @@ $(function() {
 
 //                }
             })
-            if(curr_page.init) eval(curr_page.init);
+            //if(curr_page.init) eval(curr_page.init);
+            if(curr_page.init) init.run(curr_page.init);
 
 //            $('#main').load(
 //                'partials/' + curr_page.partial + '.html',
@@ -60,54 +61,44 @@ $(function() {
 
 
 function initCarousel() {
-    setTimeout(
-        function() { $("#sip-carousel").carousel({interval:5000}) },
-        1000);
+    setTimeout(function() { $("#sip-carousel").carousel({interval:5000}) },1000);
 }
 
-function initMorningMenu() {
-    $.getJSON('data/coffee.json', {cache:false}, function(menu_data) {
-        console.log(menu_data);
-        createMenu('#sip-menu', menu_data, true);
-    })
-        .fail(function( jqxhr, textStatus, error ) {
-          var err = textStatus + ', ' + error;
-          console.log( "Request Failed: " + err);
+var init = {
+    'run':function(pageID) {
+        this[pageID]();
+    },
+    'carousel':function() {
+        setTimeout(function() { $("#sip-carousel").carousel({interval:5000}) },1000);
+    },
+    'coffee':function() {
+        $.getJSON('data/coffee.json', {cache:false}, function(menu_data) {
+            console.log(menu_data);
+            createMenu('#sip-menu', menu_data, true);
         });
-    $.getJSON('data/breakfast.json', {cache:false}, function(food_data) {
-        createSimpleMenu('#sip-breakfast', food_data);
-    });
-    $.getJSON('data/addons.json', {cache:false}, function(addon_data) {
-        createSimpleMenu('#sip-addons', addon_data);
-    }).fail(function( jqxhr, textStatus, error ) {
-          var err = textStatus + ', ' + error;
-          console.log( "Request Failed: " + err);
+        $.getJSON('data/addons.json', {cache:false}, function(addon_data) {
+            createSimpleMenu('#sip-menu', addon_data);
+        });
+    },
+    'breakfast':function() {
+        $.getJSON('data/breakfast.json', {cache:false}, function(food_data) {
+            createSimpleMenu('#sip-menu', food_data);
         });
 
-
-}
-
-
-function initBeerMenu() {
-    $.getJSON('data/beer.json', {cache:false}, function(beer_data) {
-        createBeerMenu('#sip-menu', beer_data);
-        console.log(beer_data);
-    }).fail(function( jqxhr, textStatus, error ) {
-          var err = textStatus + ', ' + error;
-          console.log( "Request Failed: " + err);
+    },
+    'beer':function() {
+        $.getJSON('data/beer.json', {cache:false}, function(beer_data) {
+            createBeerMenu('#sip-menu', beer_data);
+            console.log(beer_data);
         });
-}
-
-
-function initWineMenu() {
-    $.getJSON('data/wine.json', {cache:false}, function(wine_data) {
-        createWineMenu('#sip-menu', wine_data);
-        console.log(wine_data);
-    }).fail(function( jqxhr, textStatus, error ) {
-          var err = textStatus + ', ' + error;
-          console.log( "Request Failed: " + err);
+    },
+    'wine':function() {
+        $.getJSON('data/wine.json', {cache:false}, function(wine_data) {
+            createWineMenu('#sip-menu', wine_data);
+            console.log(wine_data);
         });
-}
+    }
+};
 
 
 function createWineMenu(containerID, menu) {
