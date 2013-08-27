@@ -9,7 +9,6 @@ function getPageData(path, nav_data) {
     return nav_data.home;
 }
 
-
 $(function() {
     $.ajax({
         cache:false
