@@ -6,19 +6,33 @@
         "partial":"carousel",
         "init":"initCarousel();"
     },
-    "menu":{
-        "url":"/breakfast_menu.html",
-        "title":"Coffee & Breakfast",
-        "pageTitle":"SiP Boulder - Coffee & Breakfast Menu",
+    "coffee":{
+        "url":"/coffee_menu.html",
+        "title":"Coffee",
+        "pageTitle":"SiP Boulder - Coffee Menu",
         "partial":"menu_morning",
         "init":"initMorningMenu();"
     },
-    "drinks":{
+    "breakfast":{
+        "url":"/breakfast_menu.html",
+        "title":"Breakfast",
+        "pageTitle":"SiP Boulder - Breakfast Menu",
+        "partial":"menu_morning",
+        "init":"initMorningMenu();"
+    },
+    "beer":{
         "url":"/beer_menu.html",
-        "title":"Drinks & Appetizers",
-        "pageTitle":"SiP Boulder - Drinks & Appetizers",
+        "title":"Beer",
+        "pageTitle":"SiP Boulder - Beer Menu",
         "partial":"drinks",
-        "init":"initEveningMenu();"
+        "init":"initBeerMenu();"
+    },
+    "wine":{
+        "url":"/wine_menu.html",
+        "title":"Wine",
+        "pageTitle":"SiP Boulder - Wine Menu",
+        "partial":"drinks",
+        "init":"initWineMenu();"
     }
 
 }

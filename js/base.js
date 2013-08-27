@@ -17,7 +17,7 @@ $(function() {
     });
     $('#nav').load('partials/nav.html', function() {
 
-        $.getJSON('data/nav.json', function(nav_data) {
+        $.getJSON('data/nav.json', {cache:false}, function(nav_data) {
 
             var curr_page = getPageData(window.location.pathname, nav_data);
             var nav  = $('ul#bs-nav-list');
@@ -88,7 +88,7 @@ function initMorningMenu() {
 }
 
 
-function initEveningMenu() {
+function initBeerMenu() {
     $.getJSON('data/beer.json', {cache:false}, function(beer_data) {
         createBeerMenu('#sip-menu', beer_data);
         console.log(beer_data);
@@ -99,11 +99,68 @@ function initEveningMenu() {
 }
 
 
-function createBeerMenu(containerID, menu) {
+function initWineMenu() {
+    $.getJSON('data/wine.json', {cache:false}, function(wine_data) {
+        createWineMenu('#sip-menu', wine_data);
+        console.log(wine_data);
+    }).fail(function( jqxhr, textStatus, error ) {
+          var err = textStatus + ', ' + error;
+          console.log( "Request Failed: " + err);
+        });
+}
+
+
+function createWineMenu(containerID, menu) {
     var target = $(containerID),
         table = $('<table>', {class:'table menu-table'}),
         tableBody = $('<tbody>'),
         td, tr, displayType;
+    target.append($('<h2>', {text:menu.title}));
+
+    tableBody = $('<thead>');
+    tr = $('<tr>');
+    $('<th>', {colspan:2}).appendTo(tr);
+    $('<th>', {text:'Glass'}).appendTo(tr);
+    $('<th>', {text:'Bottle'}).appendTo(tr);
+    tr.appendTo(tableBody);
+    table.append(tableBody)
+
+    //target.append(tr.appendTo(tableBody));
+
+    tableBody = $('<tbody>');
+    menu.items.forEach(function(val) {
+        tr = $('<tr>');
+        $('<td>', {html:$('<strong>',{text:val.type})}).appendTo(tr);
+        $('<td>', {text:[val.title, val.origin].join(' ')}).appendTo(tr);
+        $('<td>', {text:getPrice(val.price.glass)}).appendTo(tr);
+        $('<td>', {text:getPrice(val.price.bottle)}).appendTo(tr);
+
+        tr.appendTo(tableBody);
+        if(val.description) {
+            tr = $('<tr>');
+            tr.append($('<td>',{colspan:4,text:val.description,class:'description-row'}));
+            tr.appendTo(tableBody);
+        }
+
+    });
+    target.append(table.append(tableBody));
+}
+
+function getPrice(val) {
+    return val ? '$' + val : '';
+}
+
+function getBeerData(abv, ibu) {
+    if(abv) return abv + '% ABV';
+    if(ibu) return ibu + ' IBU';
+    return '';
+}
+
+function createBeerMenu(containerID, menu) {
+    var target = $(containerID),
+        table = $('<table>', {class:'table menu-table'}),
+        tableBody = $('<tbody>'),
+        td, tr, displayTitle, displayType;
     target.append($('<h2>', {text:menu.title}));
     for(i in menu.types) {
         tr = $('<tr>');
@@ -117,11 +174,13 @@ function createBeerMenu(containerID, menu) {
         tableBody.append(tr);
         menu.types[i].items.forEach(function(val, idx) {
             tr = $('<tr>');
-            tr.append($('<td>', {text:val.title}));
+            var displayTitle = val.title;
+            if(val.size) displayTitle += ' (' + val.size + ')';
+            tr.append($('<td>', {html:$('<strong>',{text:displayTitle})}));
             tr.append($('<td>', {text:val.origin}));
-            tr.append($('<td>', {text:val.abv}));
+            tr.append($('<td>', {text:getBeerData(val.abv, val.ibu)}));
             tableBody.append(tr);
-            tableBody.append($('<tr>').append($('<td>', {colspan:3,text:val.description})));
+            tableBody.append($('<tr>').append($('<td>', {colspan:3,text:val.description,class:"description-row"})));
         });
 
 

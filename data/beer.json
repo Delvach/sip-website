@@ -10,6 +10,8 @@
                     "description":"Light bodied American lager, crisp malt, subtle Saaz hops",
                     "origin":"Boulder",
                     "abv":"2.8",
+                    "ibu":"",
+                    "size":"",
                     "price":""
                 },
                 {
@@ -17,6 +19,8 @@
                     "description":"Medium bodied amber ale, inspired lighter style Scottish ale",
                     "origin":"Ft. Collins",
                     "abv":"5.3",
+                    "ibu":"",
+                    "size":"",
                     "price":""
                 },
                 {
@@ -24,6 +28,8 @@
                     "description":"German inspired, rich layered malty notes, crisp & dry",
                     "origin":"Denver",
                     "abv":"6.2",
+                    "ibu":"",
+                    "size":"",
                     "price":""
                 },
                 {
@@ -31,6 +37,8 @@
                     "description":"Bold, refreshing, abundance of hops, smooth malt profile",
                     "origin":"Salt Lake",
                     "abv":"7.3",
+                    "ibu":"",
+                    "size":"",
                     "price":""
                 },
                 {
@@ -38,6 +46,8 @@
                     "description":"Big HOPS, well balanced, nutty, malty and sweetness",
                     "origin":"Denver",
                     "abv":"10",
+                    "ibu":"",
+                    "size":"",
                     "price":""
                 }
             ]
@@ -48,9 +58,11 @@
             "items":[
                 {
                     "title":"Boulevard Wheat",
-                    "description":"american style wheat, unfiltered, natural citrus flavor (16oz)",
+                    "description":"american style wheat, unfiltered, natural citrus flavor",
                     "origin":"Kansas City",
                     "abv":"4.4",
+                    "ibu":"",
+                    "size":"16oz",
                     "price":"4.50"
                 },
                 {
@@ -58,13 +70,17 @@
                     "description":"medium bodied blonde ale, touch of local honey, citrus hops",
                     "origin":"Durango",
                     "abv":"5.3",
+                    "ibu":"",
+                    "size":"",
                     "price":""
                 },
                 {
                     "title":"Uinta Wyld Extra Pale Ale",
-                    "description":"lighter bodied pale ale, aggressively dry hopped, organic - 29 IBU",
+                    "description":"lighter bodied pale ale, aggressively dry hopped, organic",
                     "origin":"Salt Lake",
                     "abv":"",
+                    "ibu":"29",
+                    "size":"",
                     "price":""
                 },
                 {
@@ -72,6 +88,8 @@
                     "description":"crisp first sip, hoppy tongue, malty finish",
                     "origin":"Durango",
                     "abv":"5.7",
+                    "ibu":"",
+                    "size":"",
                     "price":""
                 },
                 {
@@ -79,6 +97,8 @@
                     "description":"spicy / citric / floral infusion of hop character, balanced",
                     "origin":"Santa Fe",
                     "abv":"6.6",
+                    "ibu":"",
+                    "size":"",
                     "price":""
                 },
                 {
@@ -86,13 +106,17 @@
                     "description":"citrus aromas, pine scents, bitter & hoppy, smooth finish",
                     "origin":"Durango",
                     "abv":"6.8",
+                    "ibu":"",
+                    "size":"",
                     "price":""
                 },
                 {
                     "title":"Uinta Baba Black Lager",
-                    "description":"robust & smooth, full flavored lager, pitch black in color, organic - 32 IBU",
+                    "description":"robust & smooth, full flavored lager, pitch black in color, organic",
                     "origin":"Salt Lake",
                     "abv":"",
+                    "ibu":"32",
+                    "size":"",
                     "price":""
                 },
                 {
@@ -100,6 +124,8 @@
                     "description":"medium bodied, rich & malty, assertive hops, smooth/dry finish",
                     "origin":"Boulder",
                     "abv":"6.7",
+                    "ibu":"",
+                    "size":"",
                     "price":""
                 }
             ]
@@ -109,17 +135,21 @@
             "price":"",
             "items":[
                 {
-                    "title":"Upslope Imperial IPA 19.2oz",
+                    "title":"Upslope Imperial IPA",
                     "description":"subtle flavors of tropical fruit balanced with citrus/pine hop notes",
                     "origin":"Boulder",
                     "abv":"10",
+                    "ibu":"",
+                    "size":"19.2oz",
                     "price":"11"
                 },
                 {
-                    "title":"River North 'J Marie' Farmhouse Ale 22oz",
+                    "title":"River North 'J Marie' Farmhouse Ale",
                     "description":"saison, apricot on the nose, malty backbone, dry finish",
                     "origin":"Denver",
                     "abv":"7.5",
+                    "ibu":"",
+                    "size":"22oz",
                     "price":"13"
                 }
             ]
