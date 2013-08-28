@@ -171,5 +171,6 @@ h1, h2, h3, h4 h5, h6 {
   margin-bottom: 60px;
 }
 
-.food_col_1 { width: 50%; }
-.food_col_2 { }
+.col-price {
+  width: 20%;
+}

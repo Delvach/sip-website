@@ -28,6 +28,12 @@
         "title":"Wine",
         "pageTitle":"Wine Menu",
         "init":"wine"
+    },
+    "food":{
+        "url":"/food_menu.html",
+        "title":"Food",
+        "pageTitle":"Food Menu",
+        "init":"food"
     }
 
 }
