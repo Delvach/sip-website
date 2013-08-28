@@ -54,10 +54,15 @@ h1, h2, h3, h4 h5, h6 {
   padding-top: 18px;
 }
 
-#sip-carousel {
-
+#sip-carousel .carousel-caption {
+  /*background-color: rgba(255,255,255,.6);*/
+  /*left: 0px;*/
+  top: 0px;
 }
 
+#sip-carousel h3, #sip-carousel p {
+  text-shadow: 0px 0px 1px rgba(0,0,0,1);
+}
 
 .main {
   /*background-color: red;*/
@@ -158,8 +163,26 @@ h1, h2, h3, h4 h5, h6 {
   margin-top: -1px;
 }
 
-#promos .col-sm-4 {
-  padding: 0px;
+#promos .pane a {
+  color: #fff;
+  display: block;
+  min-height:100px;
+}
+
+#promos .pane1 {
+  background: url(/img/promo/promo_coffee.jpg);
+}
+
+#promos .pane2 {
+  background: url(/img/promo/promo_glasses2.jpg);
+}
+
+#promos .pane3 {
+  background: url(/img/promo/promo_sign.jpg);
+}
+
+#promos .col-md-4 {
+  /*padding: 0px;*/
 }
 
 .inner {
@@ -198,4 +221,10 @@ h1, h2, h3, h4 h5, h6 {
 
 .menu-description {
   color: #F39C12;
+}
+
+
+/* Third party on-screen components */
+.fb-like {
+  margin: 10px;
 }
