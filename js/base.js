@@ -70,9 +70,12 @@ var init = {
 
 var format = {
     'price':function(_price) {
-        var price = new Number(_price);
-        if(!price) return '';
-        return price.toFixed(2);
+        if(!_price) return $('<span>');
+        var price = new Number(_price).toFixed(2);
+        var dollarTag = $('<span>',{text:'$',class:'menu-dollarsign'});
+        var priceTag = $('<span>',{text:price,class:'menu-price'});
+
+        return $('<span>').append(dollarTag).append(priceTag);
     }
 };
 
@@ -85,19 +88,18 @@ var factory = {
             //var price_data = $.makeArray(price);
             if($.type(price) == 'string') {
                 console.log('test');
-                tr.append($('<td>', {class:'col-price'})).append($('<td>', {text:format.price(price),class:'col-price'}));
+                tr.append($('<td>', {class:'col-price'})).append($('<td>', {html:format.price(price),class:'col-price'}));
                 num_rows++;
             } else {
                 var sm = price.sm ? format.price(price.sm) : '';
                 var lg = price.lg ? format.price(price.lg) : '';
-                tr.append($('<td>', {text:sm,class:'col-price'})).append($('<td>', {text:lg,class:'col-price'}));
+                tr.append($('<td>', {html:sm,class:'col-price'})).append($('<td>', {html:lg,class:'col-price'}));
                 num_rows += 2;
-
             }
         }
         target.append(tr);
         if(description) {
-            target.append($('<tr>').append($('<td>',{colspan:3,class:'description-row',html:$('<em>',{text:description})})));
+            target.append($('<tr>').append($('<td>',{colspan:3,class:'description-row',html:$('<em>',{text:description,class:'menu-description'})})));
         }
 
         return tr;
@@ -133,17 +135,15 @@ var create = {
 
         for(section in menu) {
             h1 = $('<h1>').text(menu[section].category);
-            //h2 = $('<h2>').text(menu[section].sizes);
-            //span = $('<span>', {text:menu[section].sizes,class:'pull-right'});
             target.append(h1);
             table = $('<table>', {class:'table menu-table'});
 
             if(menu[section].sizes) {
                 tableBody = $('<thead>');
                 td1 = $('<th>', {class:''});
-                td2 = $('<th>', {text:menu[section].sizes.sm,class:'col-price'});
+                td2 = $('<th>', {text:menu[section].sizes.sm,class:'menu-size-header'});
                 tr  = $('<tr>').append(td1).append(td2);
-                tr.append($('<th>', {text:menu[section].sizes.lg,class:'col-price'}));
+                tr.append($('<th>', {text:menu[section].sizes.lg,class:'menu-size-header'}));
                 table.append(tableBody.append(tr));
             }
             tableBody = $('<tbody>');
