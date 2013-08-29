@@ -76,13 +76,25 @@ h1, h2, h3, h4 h5, h6 {
   /*margin-left: 20px;*/
 }
 
-#sip-menu h1 {
+#sip-menu h2 {
   color: #C0392B;
-  font-size: 42px;
+  /*font-size: 42px;*/
   letter-spacing: 1px;
 }
 
+#main {
+  position: relative;
+}
 
+h1.page-title {
+  color: #F1C40F;
+  font-family: 'Lato';
+  position: absolute;
+  margin: 0px;
+  right: 50px;
+  text-shadow: 0px 0px 5px rgba(0,0,0,.6);
+  top: -60px;
+}
 
 
 #footer {
@@ -110,7 +122,7 @@ h1, h2, h3, h4 h5, h6 {
 }
 
 #footer li, #footer a, #footer a:active, #footer a:hover, #footer a:visited, #footer a:link {
-  color: #D35400;
+  color: #2C3E50;
 }
 
 .temp {
@@ -163,10 +175,19 @@ h1, h2, h3, h4 h5, h6 {
   margin-top: -1px;
 }
 
-#promos .pane a {
+.pane {
   color: #fff;
   display: block;
-  min-height:100px;
+  min-height: 260px;
+}
+
+.pane a {
+  color: #fff;
+}
+
+.pane h3 {
+  font-size: 30px;
+  text-align: center;
 }
 
 #promos .pane1 {
@@ -174,15 +195,20 @@ h1, h2, h3, h4 h5, h6 {
 }
 
 #promos .pane2 {
-  background: url(/img/promo/promo_glasses2.jpg);
+  background: url(/img/promo/promo_bg_glassses_dark.jpg);
 }
 
 #promos .pane3 {
-  background: url(/img/promo/promo_sign.jpg);
+  /*background: url(/img/promo/promo_sign.jpg);*/
+  background-color: #C0392B;
 }
 
 #promos .col-md-4 {
   /*padding: 0px;*/
+}
+
+#hours {
+
 }
 
 .inner {
@@ -193,7 +219,7 @@ h1, h2, h3, h4 h5, h6 {
 
 #sip-menu h2 {
   color: #C0392B;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 #sip-menu strong {
@@ -210,21 +236,51 @@ h1, h2, h3, h4 h5, h6 {
   margin-bottom: 60px;
 }
 
+.section-description {
+  border-top: none !important;
+  padding: 0px !important;
+}
+
+.section-description h3 {
+  margin: 20px 0 10px 0;
+}
+
+.menu-table th {
+  border-bottom: none !important;
+}
+
 .menu-dollarsign {
-  color: #F39C12;
+  color: #95A5A6;
 }
 
 .menu-price {
   color: #D35400;
   font-size: 18px;
+  margin-bottom: 10px;
 }
 
 .menu-description {
-  color: #F39C12;
+  color: #95A5A6;
+  display: block;
+  padding-left: 10px;
+  margin-bottom: 10px;
 }
 
 
-/* Third party on-screen components */
-.fb-like {
-  margin: 10px;
+
+
+.menu-row {}
+.menu-header-row {
+  /*border-bottom: 1px solid #e0e0e0;*/
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
+.menu-header-row h2 {
+  margin-top: -10px;
+}
+.menu-subheader-row {
+  border-bottom: 1px solid #e0e0e0;
+  margin: 10px 0;
+}
+.menu-title-box {}
+.menu-description-box {}

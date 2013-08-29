@@ -1,0 +1,30 @@
+{
+    "Monday":{
+        "open":"7:00am",
+        "close":"9:00pm"
+    },
+    "Tuesday":{
+        "open":"7:00am",
+        "close":"9:00pm"
+    },
+    "Wednesday":{
+        "open":"7:00am",
+        "close":"9:00pm"
+    },
+    "Thursday":{
+        "open":"7:00am",
+        "close":"10:00pm"
+    },
+    "Friday":{
+        "open":"7:00am",
+        "close":"10:00pm"
+    },
+    "Saturday":{
+        "open":"8:00am",
+        "close":"10:00pm"
+    },
+    "Sunday":{
+        "open":"8:00am",
+        "close":"8:00pm"
+    }
+}

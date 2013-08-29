@@ -1,16 +1,33 @@
 {
-    "espresso": {
-        "category":"Appetizers",
+    "header":{
+        "display":false,
+        "title":"",
         "description":"",
-        "items":[
-            {
-                "title":"Cyndi's Spiced Almonds",
-                "description":"House made rosemary & chipotle glazed almonds",
+        "price":{
+            "sm":"",
+            "lg":""
+        }
+    },
+    "sections":{
+        "appetizers": {
+            "header":{
+                "title":"Appetizers",
+                "description":"",
                 "price":{
                     "sm":"",
-                    "lg":"4"
+                    "lg":""
                 }
-            }
-        ]
+            },
+            "items":[
+                {
+                    "title":"Cyndi's Spiced Almonds",
+                    "description":"House made rosemary & chipotle glazed almonds",
+                    "price":{
+                        "sm":"",
+                        "lg":"4.00"
+                    }
+                }
+            ]
+        }
     }
 }
