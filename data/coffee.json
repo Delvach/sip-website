@@ -11,11 +11,12 @@
     "sections":{
         "espresso": {
             "header":{
+                "display":true,
                 "title":"Espresso Drinks",
                 "description":"",
                 "price":{
-                    "sm":"12 oz",
-                    "lg":"16 oz"
+                    "sm":"",
+                    "lg":""
                 }
             },
             "items":[
@@ -80,6 +81,7 @@
         },
         "coffee": {
             "header":{
+                "display":true,
                 "title":"Coffee Drinks",
                 "description":"",
                 "price":{
@@ -108,6 +110,7 @@
         },
         "hot": {
             "header":{
+                "display":true,
                 "title":"Other Hot Beverages",
                 "description":"",
                 "price":{
@@ -152,6 +155,7 @@
         },
         "cold": {
             "header":{
+                "display":true,
                 "title":"Cold Drinks",
                 "description":"",
                 "price":{
@@ -247,6 +251,31 @@
                         "sm":"",
                         "lg":"1.00"
                     }
+                }
+            ]
+        },
+        "cold": {
+            "header":{
+                "display":true,
+                "title":"Beverage Add Ons",
+                "description":"",
+                "price":{
+                    "sm":"",
+                    "lg":""
+                }
+            },
+            "items":[
+                {
+                    "title":"Extra shot of espresso",
+                    "price":".50"
+                },
+                {
+                    "title":"Substitute Soy / Almond Milk",
+                    "price":".60"
+                },
+                {
+                    "title":"Flavors and Syrups",
+                    "price":".50"
                 }
             ]
         }

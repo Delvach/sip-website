@@ -1,9 +1,26 @@
 {
-    "title":"Beer",
-    "types":{
-        "draft":{
-            "title":"Draft",
-            "price":"5.00",
+    "header":{
+        "display":false,
+        "title":"",
+        "description":"",
+        "price":{
+            "sm":"12 oz",
+            "lg":"16 oz"
+        },
+        "descriptionFormat":"beerDescription",
+        "titleFormat":"beerTitle"
+    },
+    "sections":{
+        "draft": {
+            "header":{
+                "display":true,
+                "title":"Draft Beers",
+                "description":"",
+                "price":{
+                    "sm":"",
+                    "lg":"Glass"
+                }
+            },
             "items":[
                 {
                     "title":"Upslope Craft Lager",
@@ -12,7 +29,7 @@
                     "abv":"2.8",
                     "ibu":"",
                     "size":"",
-                    "price":""
+                    "price":"5.00"
                 },
                 {
                     "title":"Odells 90 Schilling",
@@ -21,7 +38,7 @@
                     "abv":"5.3",
                     "ibu":"",
                     "size":"",
-                    "price":""
+                    "price":"5.00"
                 },
                 {
                     "title":"Great Divide Hoss Rye Lager",
@@ -30,7 +47,7 @@
                     "abv":"6.2",
                     "ibu":"",
                     "size":"",
-                    "price":""
+                    "price":"5.00"
                 },
                 {
                     "title":"Uinta Hop Notch IPA",
@@ -39,7 +56,7 @@
                     "abv":"7.3",
                     "ibu":"",
                     "size":"",
-                    "price":""
+                    "price":"5.00"
                 },
                 {
                     "title":"Great Divide Hercules Double IPA",
@@ -48,13 +65,20 @@
                     "abv":"10",
                     "ibu":"",
                     "size":"",
-                    "price":""
+                    "price":"5.00"
                 }
             ]
         },
         "cans":{
-            "title":"Cans",
-            "price":"4.00",
+            "header":{
+                "display":true,
+                "title":"Can Beers",
+                "description":"",
+                "price":{
+                    "sm":"",
+                    "lg":"Can"
+                }
+            },
             "items":[
                 {
                     "title":"Boulevard Wheat",
@@ -72,7 +96,7 @@
                     "abv":"5.3",
                     "ibu":"",
                     "size":"",
-                    "price":""
+                    "price":"4.00"
                 },
                 {
                     "title":"Uinta Wyld Extra Pale Ale",
@@ -81,7 +105,7 @@
                     "abv":"",
                     "ibu":"29",
                     "size":"",
-                    "price":""
+                    "price":"4.00"
                 },
                 {
                     "title":"SKA ESB (english special bitter)",
@@ -90,7 +114,7 @@
                     "abv":"5.7",
                     "ibu":"",
                     "size":"",
-                    "price":""
+                    "price":"4.00"
                 },
                 {
                     "title":"Santa Fe Happy Camper IPA",
@@ -99,7 +123,7 @@
                     "abv":"6.6",
                     "ibu":"",
                     "size":"",
-                    "price":""
+                    "price":"4.00"
                 },
                 {
                     "title":"SKA Modus Hoperandi IPA",
@@ -108,7 +132,7 @@
                     "abv":"6.8",
                     "ibu":"",
                     "size":"",
-                    "price":""
+                    "price":"4.00"
                 },
                 {
                     "title":"Uinta Baba Black Lager",
@@ -117,7 +141,7 @@
                     "abv":"",
                     "ibu":"32",
                     "size":"",
-                    "price":""
+                    "price":"4.00"
                 },
                 {
                     "title":"Upslope Brown",
@@ -126,13 +150,20 @@
                     "abv":"6.7",
                     "ibu":"",
                     "size":"",
-                    "price":""
+                    "price":"4.00"
                 }
             ]
         },
         "features":{
-            "title":"Features",
-            "price":"",
+            "header":{
+                "display":true,
+                "title":"Features",
+                "description":"",
+                "price":{
+                    "sm":"",
+                    "lg":"Each"
+                }
+            },
             "items":[
                 {
                     "title":"Upslope Imperial IPA",
@@ -141,7 +172,7 @@
                     "abv":"10",
                     "ibu":"",
                     "size":"19.2oz",
-                    "price":"11"
+                    "price":"11.00"
                 },
                 {
                     "title":"River North 'J Marie' Farmhouse Ale",
@@ -150,7 +181,7 @@
                     "abv":"7.5",
                     "ibu":"",
                     "size":"22oz",
-                    "price":"13"
+                    "price":"13.00"
                 }
             ]
         }

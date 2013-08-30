@@ -87,13 +87,14 @@ h1, h2, h3, h4 h5, h6 {
 }
 
 h1.page-title {
-  color: #F1C40F;
+  color: #D35400;
   font-family: 'Lato';
-  position: absolute;
+  /*position: absolute;*/
   margin: 0px;
-  right: 50px;
-  text-shadow: 0px 0px 5px rgba(0,0,0,.6);
-  top: -60px;
+  text-align: center;
+  /*right: 50px;*/
+  /*text-shadow: 0px 0px 5px rgba(0,0,0,.6);*/
+  /*top: -60px;*/
 }
 
 
@@ -236,7 +237,7 @@ h1.page-title {
   margin-bottom: 60px;
 }
 
-.section-description {
+.section-h1 {
   border-top: none !important;
   padding: 0px !important;
 }
@@ -259,17 +260,14 @@ h1.page-title {
   margin-bottom: 10px;
 }
 
-.menu-description {
-  color: #95A5A6;
-  display: block;
-  padding-left: 10px;
-  margin-bottom: 10px;
+
+
+
+
+
+.menu-row {
+  min-height: 60px;
 }
-
-
-
-
-.menu-row {}
 .menu-header-row {
   /*border-bottom: 1px solid #e0e0e0;*/
   margin-bottom: 20px;
@@ -278,9 +276,28 @@ h1.page-title {
 .menu-header-row h2 {
   margin-top: -10px;
 }
+.menu-header-row h3 {
+  margin-top: 10px;
+}
 .menu-subheader-row {
   border-bottom: 1px solid #e0e0e0;
-  margin: 10px 0;
+  /*margin: 10px 0;*/
+  margin-bottom: 10px;
 }
 .menu-title-box {}
 .menu-description-box {}
+.menu-description {
+  color: #95A5A6;
+  display: block;
+}
+.menu-beer-description {
+  min-height: 60px;
+}
+.menu-origin {
+  color: #999;
+  font-size: 18px;
+  padding-left: 10px;
+}
+.red {
+  background-color: red;
+}

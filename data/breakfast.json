@@ -1,39 +1,58 @@
 {
-    "title":"Breakfast Menu",
-    "items":[
-        {
-            "title":"Fruit",
-            "price":"1.00"
-        },
-        {
-            "title":"Granola Bar",
-            "price":"1.25"
-        },
-        {
-            "title":"Bagel - Plain",
-            "price":"1.70"
-        },
-        {
-            "title":"Bagel w/ Butter",
-            "price":"2.00"
-        },
-        {
-            "title":"Bagel w/ Cream Cheese or PB",
-            "price":"2.70"
-        },
-        {
-            "title":"Muffin (daily assorted)",
-            "price":"2.75"
-        },
-        {
-            "title":"Bobo's Oat Bar / Outrageous Bread",
-            "price":"3.25"
-        },
-        {
-            "title":"Breakfast Burrito",
-            "price":"4.50"
+    "header":{
+        "display":false,
+        "title":"Breakfast Menu",
+        "description":"",
+        "price":{
+            "sm":"",
+            "lg":""
         }
-    ]
+    },
+    "sections":{
+        "food": {
+            "header":{
+                "display":false,
+                "title":"",
+                "description":"",
+                "price":{
+                    "sm":"",
+                    "lg":""
+                }
+            },
+            "items":[
+                {
+                    "title":"Fruit",
+                    "price":"1.00"
+                },
+                {
+                    "title":"Granola Bar",
+                    "price":"1.25"
+                },
+                {
+                    "title":"Bagel - Plain",
+                    "price":"1.70"
+                },
+                {
+                    "title":"Bagel w/ Butter",
+                    "price":"2.00"
+                },
+                {
+                    "title":"Bagel w/ Cream Cheese or PB",
+                    "price":"2.70"
+                },
+                {
+                    "title":"Muffin (daily assorted)",
+                    "price":"2.75"
+                },
+                {
+                    "title":"Bobo's Oat Bar / Outrageous Bread",
+                    "price":"3.25"
+                },
+                {
+                    "title":"Breakfast Burrito",
+                    "price":"4.50"
+                }
+            ]
+        }
+    }
 }
-
-

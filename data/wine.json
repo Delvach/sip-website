@@ -1,83 +1,92 @@
 {
-    "title":"Wine",
-    "items":[
-        {
-            "type":"White",
-            "title":"",
-            "origin":"SiP house white",
-            "description":"",
-            "year":"",
-            "price":{
-                "glass":"6",
-                "bottle":""
-            }
-        },
-        {
-            "type":"Red",
-            "title":"",
-            "origin":"SiP house red",
-            "description":"",
-            "year":"",
-            "price":{
-                "glass":"6",
-                "bottle":""
-            }
-        },
-        {
-            "type":"Prosecco",
-            "title":"Zonin",
-            "origin":"Italy",
-            "description":"This 'off dry' wine delivers sweet lime and peach character with subtle mineral notes.",
-            "year":"",
-            "price":{
-                "glass":"7",
-                "bottle":"24"
-            }
-        },
-        {
-            "type":"Chardonnay",
-            "title":"Seven Falls",
-            "origin":"Wahluke Slope, Washington",
-            "description":"Dried pineapple and oak.",
-            "year":"2011",
-            "price":{
-                "glass":"9",
-                "bottle":"32"
-            }
-        },
-        {
-            "type":"Sauvignon Blanc",
-            "title":"Villa Maria 'Private Bin'",
-            "origin":"New Zealand",
-            "description":"A juicy mouthfeel and a delicious finish.",
-            "year":"2011",
-            "price":{
-                "glass":"8",
-                "bottle":"28"
-            }
-        },
-        {
-            "type":"Orvieto",
-            "title":"Santa Cristina 'Campogrande', Orvieto Classico",
-            "origin":"Umbria, Italy",
-            "description":"A juicy mouthfeel and a delicious finish.",
-            "year":"2011",
-            "price":{
-                "glass":"8",
-                "bottle":"28"
-            }
+    "header":{
+        "display":true,
+        "title":"",
+        "description":"",
+        "price":{
+            "sm":"Glass",
+            "lg":"Bottle"
         }
-    ]
+    },
+    "sections":{
+        "house": {
+            "header":{
+                "display":true,
+                "title":"House Wines",
+                "description":"",
+                "price":{
+                    "sm":"",
+                    "lg":""
+                }
+            },
+            "items":[
+                {
+                    "type":"White",
+                    "title":"SiP house white",
+                    "origin":"",
+                    "description":"",
+                    "year":"",
+                    "price":{
+                        "sm":"6.00",
+                        "lg":""
+                    }
+                },
+                {
+                    "type":"Red",
+                    "title":"SiP house red",
+                    "origin":"",
+                    "description":"",
+                    "year":"",
+                    "price":{
+                        "sm":"6.00",
+                        "lg":""
+                    }
+                },
+                {
+                    "type":"Prosecco",
+                    "title":"Zonin",
+                    "origin":"Italy",
+                    "description":"This 'off dry' wine delivers sweet lime and peach character with subtle mineral notes.",
+                    "year":"",
+                    "price":{
+                        "sm":"7",
+                        "lg":"24"
+                    }
+                },
+                {
+                    "type":"Chardonnay",
+                    "title":"Seven Falls",
+                    "origin":"Wahluke Slope, Washington",
+                    "description":"Dried pineapple and oak.",
+                    "year":"2011",
+                    "price":{
+                        "sm":"9",
+                        "lg":"32"
+                    }
+                },
+                {
+                    "type":"Sauvignon Blanc",
+                    "title":"Villa Maria 'Private Bin'",
+                    "origin":"New Zealand",
+                    "description":"A juicy mouthfeel and a delicious finish.",
+                    "year":"2011",
+                    "price":{
+                        "sm":"8",
+                        "lg":"28"
+                    }
+                },
+                {
+                    "type":"Orvieto",
+                    "title":"Santa Cristina 'Campogrande', Orvieto Classico",
+                    "origin":"Umbria, Italy",
+                    "description":"A juicy mouthfeel and a delicious finish.",
+                    "year":"2011",
+                    "price":{
+                        "sm":"8",
+                        "lg":"28"
+                    }
+                }
+            ]
+        }
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
