@@ -143,7 +143,7 @@ function createMenu(targetID, data) {
 function createMenuItem(title, description, price, row_class) {
     var box = $('<div>', {class:'row menu-row'}),
         col1 = $('<div>', {class:'col-sm-6 col-sm-offset-1'}),
-        col2 = $('<div>', {class:'col-sm-5'}),
+        col2 = $('<div>', {class:'col-sm-5 menu-price-outer'}),
         price1, price2;
     if(!price) {
         price1 = '';

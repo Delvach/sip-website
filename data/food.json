@@ -11,6 +11,7 @@
     "sections":{
         "appetizers": {
             "header":{
+                "display":true,
                 "title":"Appetizers",
                 "description":"",
                 "price":{
@@ -21,13 +22,164 @@
             "items":[
                 {
                     "title":"Cyndi's Spiced Almonds",
-                    "description":"House made rosemary & chipotle glazed almonds",
+                    "description":"House made rosemary & chipotle glazed almonds.",
                     "price":{
                         "sm":"",
                         "lg":"4.00"
                     }
+                },
+                {
+                    "title":"Endame",
+                    "description":"Soybeans steamed, sprinkled with sea salt & drizzle of olive oil.",
+                    "price":{
+                        "sm":"",
+                        "lg":"4.25"
+                    }
+                },
+                {
+                    "title":"SIP Salad",
+                    "description":"Mixed greens, red pepper, feta, mandarin wedges and completed with our house made orange balsamic vinaigrette.",
+                    "price":{
+                        "sm":"",
+                        "lg":"7.50"
+                    }
+                },
+                {
+                    "title":"Caprese Salad",
+                    "description":"Vine ripened tomatoes and sliced mozzarella lined with fresh arugula. Finished with a drizzle of olive oil, pesto, cracked black pepper & balsamic.",
+                    "price":{
+                        "sm":"",
+                        "lg":"7.50"
+                    }
+                },
+                {
+                    "title":"Arugula Salad",
+                    "description":"Arugula, house roasted tomatoes, walnuts, shaved Lake County Sharp, finished with lemon vinaigrette.",
+                    "price":{
+                        "sm":"",
+                        "lg":"7.50"
+                    }
+                }
+            ]
+        },
+        "board": {
+            "header":{
+                "display":true,
+                "title":"Build a Board",
+                "description":"Includes Lavash",
+                "price":{
+                    "sm":"",
+                    "lg":""
+                }
+            },
+            "items":[
+                {
+                    "title":"Lake Country Sharp",
+                    "description":"Wisconsin, cow, hard, aged 12+ months.",
+                    "price":{
+                        "sm":"",
+                        "lg":"3.50"
+                    }
+                },
+                {
+                    "title":"TITLE",
+                    "description":"DESCRIPTION",
+                    "price":{
+                        "sm":"",
+                        "lg":"PRICE"
+                    }
+                },
+                {
+                    "title":"TITLE",
+                    "description":"DESCRIPTION",
+                    "price":{
+                        "sm":"",
+                        "lg":"PRICE"
+                    }
+                },
+                {
+                    "title":"TITLE",
+                    "description":"DESCRIPTION",
+                    "price":{
+                        "sm":"",
+                        "lg":"PRICE"
+                    }
+                }
+            ]
+        },
+        "pizza": {
+            "header":{
+                "display":true,
+                "title":"Flatbread Pizzas",
+                "description":"",
+                "price":{
+                    "sm":"",
+                    "lg":""
+                }
+            },
+            "items":[
+                {
+                    "title":"TITLE",
+                    "description":"DESCRIPTION",
+                    "price":{
+                        "sm":"",
+                        "lg":"PRICE"
+                    }
+                },
+                {
+                    "title":"TITLE",
+                    "description":"DESCRIPTION",
+                    "price":{
+                        "sm":"",
+                        "lg":"PRICE"
+                    }
+                }
+            ]
+        },
+        "sweets": {
+            "header":{
+                "display":true,
+                "title":"Sweets",
+                "description":"",
+                "price":{
+                    "sm":"",
+                    "lg":""
+                }
+            },
+            "items":[
+                {
+                    "title":"TITLE",
+                    "description":"DESCRIPTION",
+                    "price":{
+                        "sm":"",
+                        "lg":"PRICE"
+                    }
+                },
+                {
+                    "title":"TITLE",
+                    "description":"DESCRIPTION",
+                    "price":{
+                        "sm":"",
+                        "lg":"PRICE"
+                    }
+                },
+                {
+                    "title":"TITLE",
+                    "description":"DESCRIPTION",
+                    "price":{
+                        "sm":"",
+                        "lg":"PRICE"
+                    }
                 }
             ]
         }
+
+
+
+
+
+
+
+
     }
 }

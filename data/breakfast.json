@@ -11,7 +11,7 @@
     "sections":{
         "food": {
             "header":{
-                "display":false,
+                "display":true,
                 "title":"",
                 "description":"",
                 "price":{
