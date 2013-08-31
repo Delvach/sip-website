@@ -1,0 +1,54 @@
+body {
+  font: 0.9em/1.5em Georgia, "Times New Roman", Times, serif;
+  width: 7.5in;
+  background-color: green;
+}
+
+nav, #footer {
+  display: none;
+  visibility: hidden;
+}
+
+strong {
+  /*font: 0.9em/1.5em Arial, "Times New Roman", Times, serif;*/
+  font-family: 'Lato', sans-serif;
+}
+
+.menu-row {
+  clear: both;
+  width: 100%;
+
+}
+
+.menu-row .col-sm-6 {
+  float: left;
+  width: 5in;
+}
+
+.menu-row .col-sm-5 {
+  float: left;
+  width: 2in;
+}
+
+.menu-row .col-xs-6 {
+  float: left;
+  width: .9in;
+}
+
+.menu-row-wine {
+  padding-bottom: .5in;
+}
+
+
+
+.menu-origin {
+  padding-left: .2in;
+}
+
+.menu-description-box {
+  font-size: .9em;
+}
+
+.menu-row-wine .menu-description-box {
+  margin-bottom: .08in;
+}
