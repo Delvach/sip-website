@@ -196,11 +196,63 @@
                     }
                 },
                 {
-                    "title":"TITLE",
-                    "description":"DESCRIPTION",
+                    "title":"Marinara",
+                    "description":"House made red sauce, oregano, garlic (no cheese).",
+                    "pairing":{
+                        "name":"Hangtime Pinot Noir ",
+                        "price":"9.00"
+                    },
                     "price":{
                         "sm":"",
-                        "lg":"PRICE"
+                        "lg":"6.00"
+                    }
+                },
+                {
+                    "title":"Bianco",
+                    "description":"Garlic and olive oil, mozzarella and pecorino cheese, arugula with lemon vinaigrette.",
+                    "pairing":{
+                        "name":"Villa Maria Sauvignon Blanc",
+                        "price":"8.00"
+                    },
+                    "price":{
+                        "sm":"",
+                        "lg":"8.50"
+                    }
+                },
+                {
+                    "title":"Pepperoni",
+                    "description":"House made red sauce, mozzarella, caramelized onions, pepperoni.",
+                    "pairing":{
+                        "name":"Four Vines Zinfandel",
+                        "price":"8.00"
+                    },
+                    "price":{
+                        "sm":"",
+                        "lg":"8.50"
+                    }
+                },
+                {
+                    "title":"White Bean",
+                    "description":"White bean hummus, mozzarella, pepperoncini, red bell pepper and arugula.",
+                    "pairing":{
+                        "name":"Santa Cristina Orvieto Classico",
+                        "price":"7.00"
+                    },
+                    "price":{
+                        "sm":"",
+                        "lg":"8.50"
+                    }
+                },
+                {
+                    "title":"Pesto",
+                    "description":"Mozzarella and house roasted tomatoes.",
+                    "pairing":{
+                        "name":"Oggi Pinot Grigio (house white)",
+                        "price":"6.00"
+                    },
+                    "price":{
+                        "sm":"",
+                        "lg":"8.00"
                     }
                 }
             ]
@@ -217,27 +269,27 @@
             },
             "items":[
                 {
-                    "title":"TITLE",
-                    "description":"DESCRIPTION",
+                    "title":"Magic Bars",
+                    "description":"Bar cookies with graham cracker crust, chocolate chips, coconut, topped with drizzle o’ chocolate and whipped cream",
                     "price":{
                         "sm":"",
-                        "lg":"PRICE"
+                        "lg":"5.00"
                     }
                 },
                 {
-                    "title":"TITLE",
-                    "description":"DESCRIPTION",
+                    "title":"Ice Cream Bar",
+                    "description":"Frozen chocolate almond dipped vanilla ice cream bar ",
                     "price":{
                         "sm":"",
-                        "lg":"PRICE"
+                        "lg":"3.00"
                     }
                 },
                 {
-                    "title":"TITLE",
-                    "description":"DESCRIPTION",
+                    "title":"Affogato",
+                    "description":"Vanilla ice cream, shot of espresso, crumbled glazed almonds.",
                     "price":{
                         "sm":"",
-                        "lg":"PRICE"
+                        "lg":"4.00"
                     }
                 }
             ]

@@ -1,5 +1,6 @@
 body {
   /*background-color: #CC9966;*/
+  background-color: #705a53;
   background-image: url(/img/bg/01.jpg);
   background-repeat: no-repeat;
   background-position: center top;
@@ -7,7 +8,7 @@ body {
 }
 
 h1, h2, h3, h4 h5, h6 {
-  font-family: 'Lora', serif;
+  /*font-family: 'Lora', serif;*/
 }
 
 
@@ -32,9 +33,7 @@ h1, h2, h3, h4 h5, h6 {
   font-weight: bold;
 }
 
-.navbar-collapse {
 
-}
 
 .sip-outer {
   background-color: #fff;
@@ -103,9 +102,9 @@ h1.page-title {
 
 
 #footer {
-  background-color: #fff;
+  /*background-color: #fff;*/
   margin-bottom: 40px;
-  margin-top: 20px;
+  padding-top: 20px;
 
 }
 
@@ -127,13 +126,16 @@ h1.page-title {
 }
 
 #footer li, #footer a, #footer a:active, #footer a:hover, #footer a:visited, #footer a:link {
-  color: #2C3E50;
+  /*color: #2C3E50;*/
+  color: #eee;
 }
 
 .temp {
 
 }
-
+.navbar-collapse {
+  background-color: rgba(255,255,255,.5);
+}
 
 
 .description-row {
@@ -158,6 +160,9 @@ h1.page-title {
   #bs-nav-list {
     margin-top: 20px;
 
+  }
+  .navbar-collapse {
+    background-color: transparent;
   }
 }
 
@@ -272,11 +277,15 @@ h1.page-title {
 .menu-row {
   min-height: 60px;
 }
+.menu-row-wine {
+  margin-bottom: 20px;
+}
 .menu-header-row {
   /*border-bottom: 1px solid #e0e0e0;*/
   margin-bottom: 20px;
   margin-top: 10px;
 }
+
 .menu-header-row h2 {
   margin-top: -10px;
 }
@@ -295,14 +304,20 @@ h1.page-title {
 }
 .menu-title-box {}
 .menu-title-box h2 {
-  margn-top: 0px;
+  margin-top: 0px;
+}
+
+strong.menu-title {
+
 }
 .menu-description-box {
   margin-bottom: 20px;
 }
 .menu-description {
-  color: #95A5A6;
+  color: #34495E;
+  /*font-family: 'Lora', serif;*/
   display: block;
+  font-size: 18px;
 }
 .menu-beer-description {
   min-height: 60px;

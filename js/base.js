@@ -1,4 +1,4 @@
-
+var curr_page = '';
 $(function() {
     $.ajax({
         cache:false
@@ -19,7 +19,10 @@ $(function() {
                 var a = $('<a/>').appendTo(li).text(val.title).attr('href',val.url);
                 li.appendTo(nav);
             })
-            if(curr_page.init) init[curr_page.init]();
+            if(curr_page.init) {
+                init[curr_page.init]();
+                current_page = curr_page.init;
+            }
         });
     });
     $('#footer').load('partials/footer.html', function() {});
@@ -99,7 +102,7 @@ function formatDollar(val, dollarOnly) {
 }
 
 function createMenu(targetID, data) {
-    var target = $(targetID), s, i, descriptionFormatter, titleFormatter, priceFormatter;
+    var target = $(targetID), s, i, descriptionFormatter, titleFormatter, priceFormatter, row_class;
     if(data.header.display) target.append(createMenuItem($('<h3>', {text:data.header.title}),
         data.header.description ? data.header.description : '',
         getPriceArray(data.header.price),
@@ -132,21 +135,20 @@ function createMenu(targetID, data) {
     }
 
     for(sec_id in data.sections) {
+        row_class = 'menu-subheader-row';
         s = data.sections[sec_id];
         if(s.header && s.header.display) target.append(createMenuItem($('<h2>',{text:s.header.title}),
             s.header.description ? s.header.description : '',
 //            getPriceArray(s.header.price),
             '',
-            'menu-subheader-row'));
+            row_class));
         for(item_id in s.items) {
             i = s.items[item_id];
-            if(s.header.descriptionFormat) {
-                console.log(s.header.descriptionFormat);
-            }
             target.append(createMenuItem(
                 titleFormatter(i),
                 descriptionFormatter(i),
-                priceFormatter(i, s)
+                priceFormatter(i, s),
+                (current_page == 'wine') ? 'menu-row-wine' : ''
             ));
         }
     }
@@ -236,7 +238,16 @@ var format = {
             lg:price.lg ? formatDollar(price.lg, true) + ' / bottle' : ''
         };
     },
-
+    'wineTitle':function(item) {
+        var box = $('<span>');
+        var title = item.type + ' - ' + item.title;
+        var extra = item.origin;
+        if(item.year) extra += ', ' + item.year;
+        box.append($('<strong>', {text:title}));
+        //var title = item.title;
+        if(item.origin) box.append($('<span>', {text:extra, class:'menu-origin'}));
+        return box;
+    },
 
     'price':function(_price) {
         if(!_price) return $('<span>');
