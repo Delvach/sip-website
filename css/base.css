@@ -330,3 +330,8 @@ strong.menu-title {
 .red {
   background-color: red;
 }
+
+@media (print) {
+
+
+}

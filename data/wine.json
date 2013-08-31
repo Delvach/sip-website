@@ -11,7 +11,7 @@
         "priceFormat":"winePrice"
     },
     "sections":{
-        "house": {
+        "all": {
             "header":{
                 "display":true,
                 "title":"",
