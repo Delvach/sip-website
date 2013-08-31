@@ -59,6 +59,9 @@ var init = {
     'food':function() {
         $.getJSON('data/food.json', {cache:false}, function(menu_data) {
             createMenu('#sip-menu', menu_data);
+        }).fail(function( jqxhr, textStatus, error ) {
+          var err = textStatus + ', ' + error;
+          console.log( "Request Failed: " + err);
         });
     }
 };
@@ -89,12 +92,17 @@ function textToObject(val, _type, _class) {
     return val;
 }
 
+function formatDollar(val, dollarOnly) {
+    if(dollarOnly) return '$' + parseInt(val);
+    if(val) return '$' + new Number(val).toFixed(2);
+    return '';
+}
 
 function createMenu(targetID, data) {
     var target = $(targetID), s, i, descriptionFormatter, titleFormatter, priceFormatter;
     if(data.header.display) target.append(createMenuItem($('<h3>', {text:data.header.title}),
         data.header.description ? data.header.description : '',
-        data.header.price,
+        getPriceArray(data.header.price),
         'menu-header-row'));
     if(data.header.descriptionFormat) {
         descriptionFormatter = format[data.header.descriptionFormat];
@@ -115,7 +123,11 @@ function createMenu(targetID, data) {
         priceFormatter = format[data.header.priceFormat];
     } else {
         priceFormatter = function(item) {
-            return '$' + new Number(item).toFixed(2);
+            var price = getPriceArray(item.price);
+            return {
+                sm:formatDollar(price.sm),
+                lg:formatDollar(price.lg)
+            };
         }
     }
 
@@ -123,7 +135,8 @@ function createMenu(targetID, data) {
         s = data.sections[sec_id];
         if(s.header && s.header.display) target.append(createMenuItem($('<h2>',{text:s.header.title}),
             s.header.description ? s.header.description : '',
-            s.header.price,
+//            getPriceArray(s.header.price),
+            '',
             'menu-subheader-row'));
         for(item_id in s.items) {
             i = s.items[item_id];
@@ -133,35 +146,34 @@ function createMenu(targetID, data) {
             target.append(createMenuItem(
                 titleFormatter(i),
                 descriptionFormatter(i),
-                i.price
+                priceFormatter(i, s)
             ));
         }
     }
+}
+
+/*
+ * Menu price data can be stored as price:value or price:sm.value,lg.value
+ */
+function getPriceArray(price) {
+    if(!price) return {'sm':'','lg':''};
+    if($.type(price) == 'string') return {'sm':'','lg':price};
+    return price;
 }
 
 
 function createMenuItem(title, description, price, row_class) {
     var box = $('<div>', {class:'row menu-row'}),
         col1 = $('<div>', {class:'col-sm-6 col-sm-offset-1'}),
-        col2 = $('<div>', {class:'col-sm-5 menu-price-outer'}),
-        price1, price2;
-    if(!price) {
-        price1 = '';
-        price2 = '';
-    } else if($.type(price) == 'string') {
-        price1 = '';
-        price2 = price;
-    } else {
-        price1 = price.sm;
-        price2 = price.lg;
-    }
+        col2 = $('<div>', {class:'col-sm-5 menu-price-outer'});
+
     if(row_class) box.addClass(row_class);
     if(title) col1.append($('<div>', {class:'menu-title-box',html:textToObject(title, 'strong', 'menu-title')}));
     if(description) col1.append($('<div>', {class:'menu-description-box',html:textToObject(description, 'div', 'menu-description')}));
 
     col2.append(
-        $('<div>', {class:'col-xs-6 menu-price-box',html:textToObject(price1, 'span', 'menu-price')}),
-        $('<div>', {class:'col-xs-6 menu-price-box',html:textToObject(price2, 'span', 'menu-price')})
+        $('<div>', {class:'col-xs-6 menu-price-box',html:textToObject(price.sm, 'span', 'menu-price')}),
+        $('<div>', {class:'col-xs-6 menu-price-box',html:textToObject(price.lg, 'span', 'menu-price')})
     );
 
     return box.append([col1, col2]);
@@ -170,13 +182,23 @@ function createMenuItem(title, description, price, row_class) {
 
 
 var format = {
-    'price':function(_price) {
-        if(!_price) return $('<span>');
-        var price = new Number(_price).toFixed(2);
-        var dollarTag = $('<span>',{text:'$',class:'menu-dollarsign'});
-        var priceTag = $('<span>',{text:price,class:'menu-price'});
-
-        return $('<span>').append(dollarTag).append(priceTag);
+    'coffeePrice':function(item, section) {
+        var price = getPriceArray(item.price);
+        var sm = formatDollar(price.sm);
+        if(sm && section.header.price.sm) sm += ' / ' + section.header.price.sm;
+        var lg = formatDollar(price.lg);
+        if(lg && section.header.price.lg) lg += ' / ' + section.header.price.lg;
+        return {
+            sm:sm,
+            lg:lg
+        };
+    },
+    'beerPrice':function(item, section) {
+        var price = getPriceArray(item.price);
+        return {
+            sm:price.sm ? formatDollar(price.sm) : '',
+            lg:price.lg ? formatDollar(price.lg) + ' / ' + section.header.price.lg : ''
+        };
     },
     'beerDescription':function(item) {
         var box = $('<div>', {class:'menu-beer-description',text:item.description});
@@ -194,6 +216,35 @@ var format = {
         //var title = item.title;
         if(item.origin) box.append($('<span>', {text:item.origin, class:'menu-origin'}));
         return box;
+    },
+    'foodDescription':function(item) {
+        var box = $('<div>', {class:'menu-description'});
+        box.append($('<span>',{text: item.description}));
+        if(item.pairing) {
+            var pairing = $('<em>',{
+                text: 'Suggested pairing: ' + item.pairing.name + ' - $' + item.pairing.price + '/glass'
+            })
+            box.append($('<div>', {html:pairing}));
+        }
+        return box;
+
+    },
+    'winePrice':function(item) {
+        var price = getPriceArray(item.price);
+        return {
+            sm:price.sm ? formatDollar(price.sm, true) + ' / glass' : '',
+            lg:price.lg ? formatDollar(price.lg, true) + ' / bottle' : ''
+        };
+    },
+
+
+    'price':function(_price) {
+        if(!_price) return $('<span>');
+        var price = new Number(_price).toFixed(2);
+        var dollarTag = $('<span>',{text:'$',class:'menu-dollarsign'});
+        var priceTag = $('<span>',{text:price,class:'menu-price'});
+
+        return $('<span>').append(dollarTag).append(priceTag);
     }
 
 };

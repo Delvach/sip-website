@@ -6,7 +6,8 @@
         "price":{
             "sm":"",
             "lg":""
-        }
+        },
+        "descriptionFormat":"foodDescription"
     },
     "sections":{
         "appetizers": {
@@ -82,27 +83,91 @@
                     }
                 },
                 {
-                    "title":"TITLE",
-                    "description":"DESCRIPTION",
+                    "title":"Goat",
+                    "description":"Wisconsin, soft, rolled in dried Italian Seasoning",
                     "price":{
                         "sm":"",
-                        "lg":"PRICE"
+                        "lg":"3.50"
                     }
                 },
                 {
-                    "title":"TITLE",
-                    "description":"DESCRIPTION",
+                    "title":"Pecorino Romano",
+                    "description":"Italy, sheep, hard, aged 9+ months",
                     "price":{
                         "sm":"",
-                        "lg":"PRICE"
+                        "lg":"3.50"
                     }
                 },
                 {
-                    "title":"TITLE",
-                    "description":"DESCRIPTION",
+                    "title":"American Blue",
+                    "description":"Wisconsin, cow, creamy and tangy, aged 90 days",
                     "price":{
                         "sm":"",
-                        "lg":"PRICE"
+                        "lg":"3.50"
+                    }
+                },
+                {
+                    "title":"White Cheddar",
+                    "description":"Wisconsin, organic, semi hard, sharp cheddar",
+                    "price":{
+                        "sm":"",
+                        "lg":"3.50"
+                    }
+                },
+                {
+                    "title":"Aged Rembrandt Gouda",
+                    "description":"Holland, hard, ripened for over a year",
+                    "price":{
+                        "sm":"",
+                        "lg":"3.75"
+                    }
+                },
+                {
+                    "title":"Salami",
+                    "description":"Italy, dry cured, low sodium, aged",
+                    "price":{
+                        "sm":"",
+                        "lg":"3.50"
+                    }
+                },
+                {
+                    "title":"Pepperoni",
+                    "description":"you know you love it... yum yum, yum",
+                    "price":{
+                        "sm":"",
+                        "lg":"3.00"
+                    }
+                },
+                {
+                    "title":"Black Bean Hummus",
+                    "description":"Black beans pureed with lime, cilantro and garlic.",
+                    "price":{
+                        "sm":"",
+                        "lg":"3.50"
+                    }
+                },
+                {
+                    "title":"White Bean Hummus",
+                    "description":"White beans pureed with basil, lemon and garlic.",
+                    "price":{
+                        "sm":"",
+                        "lg":"3.50"
+                    }
+                },
+                {
+                    "title":"Olive Tapenade",
+                    "description":"Black and green olives chopped and blended with rosemary and garlic.",
+                    "price":{
+                        "sm":"",
+                        "lg":"3.50"
+                    }
+                },
+                {
+                    "title":"Lavash",
+                    "description":"Flat bread baked into a crispy cracker",
+                    "price":{
+                        "sm":"",
+                        "lg":"1.50"
                     }
                 }
             ]
@@ -119,11 +184,15 @@
             },
             "items":[
                 {
-                    "title":"TITLE",
-                    "description":"DESCRIPTION",
+                    "title":"Black Bean Mushroom",
+                    "description":"Black bean hummus, caramelized onions, sundried tomatoes, baby portabellas, mozzarella and goat cheese.",
+                    "pairing":{
+                        "name":"Tamari Reserva Malbec",
+                        "price":"8.00"
+                    },
                     "price":{
                         "sm":"",
-                        "lg":"PRICE"
+                        "lg":"8.50"
                     }
                 },
                 {
@@ -173,13 +242,5 @@
                 }
             ]
         }
-
-
-
-
-
-
-
-
     }
 }

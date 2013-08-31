@@ -6,7 +6,8 @@
         "price":{
             "sm":"Glass",
             "lg":"Bottle"
-        }
+        },
+        "priceFormat":"winePrice"
     },
     "sections":{
         "house": {

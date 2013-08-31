@@ -6,7 +6,8 @@
         "price":{
             "sm":"12 oz",
             "lg":"16 oz"
-        }
+        },
+        "priceFormat":"coffeePrice"
     },
     "sections":{
         "espresso": {
@@ -15,8 +16,8 @@
                 "title":"Espresso Drinks",
                 "description":"",
                 "price":{
-                    "sm":"",
-                    "lg":""
+                    "sm":"12 oz",
+                    "lg":"16 oz"
                 }
             },
             "items":[
