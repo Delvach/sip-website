@@ -248,7 +248,6 @@ var format = {
         if(item.origin) box.append($('<span>', {text:extra, class:'menu-origin'}));
         return box;
     },
-
     'price':function(_price) {
         if(!_price) return $('<span>');
         var price = new Number(_price).toFixed(2);
@@ -257,7 +256,6 @@ var format = {
 
         return $('<span>').append(dollarTag).append(priceTag);
     }
-
 };
 
 
