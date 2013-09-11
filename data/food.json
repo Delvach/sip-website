@@ -47,6 +47,7 @@
                 },
                 {
                     "title":"Caprese Salad",
+                    "disabled":true,
                     "description":"Vine ripened tomatoes and sliced mozzarella lined with fresh arugula. Finished with a drizzle of olive oil, pesto, cracked black pepper & balsamic.",
                     "price":{
                         "sm":"",

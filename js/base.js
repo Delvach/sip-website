@@ -144,6 +144,7 @@ function createMenu(targetID, data) {
             row_class));
         for(item_id in s.items) {
             i = s.items[item_id];
+            if(i.disabled) continue;
             target.append(createMenuItem(
                 titleFormatter(i),
                 descriptionFormatter(i),
