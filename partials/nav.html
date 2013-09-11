@@ -16,7 +16,15 @@
 
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse navbar-ex1-collapse">
-    <ul class="nav navbar-nav" id="bs-nav-list"></ul>
+    <ul class="nav navbar-nav" id="bs-nav-list">
+
+      <li ng-repeat="item in nav">
+        {{nav.title}}
+      </li>
+
+
+
+    </ul>
     <!--<form class="navbar-form navbar-left" role="search">-->
     <!--<div class="form-group">-->
     <!--<input type="text" class="form-control" placeholder="Search">-->

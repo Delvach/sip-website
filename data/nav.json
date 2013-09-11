@@ -1,39 +1,44 @@
-{
-    "home":{
+[
+    {
+        "id":"home",
         "url":"/",
         "title":"Welcome!",
         "pageTitle":"",
         "init":"carousel"
     },
-    "coffee":{
-        "url":"/coffee_menu.html",
+    {
+        "id":"cofee",
+        "url":"/coffee",
         "title":"Coffee",
         "pageTitle":"Coffee Menu",
         "init":"coffee"
     },
-    "breakfast":{
+    {
+        "id":"breakfast",
         "url":"/breakfast_menu.html",
         "title":"Breakfast",
         "pageTitle":"Breakfast Menu",
         "init":"breakfast"
     },
-    "beer":{
+    {
+        "id":"beer",
         "url":"/beer_menu.html",
         "title":"Beer",
         "pageTitle":"Beer Menu",
         "init":"beer"
     },
-    "wine":{
+    {
+        "id":"wine",
         "url":"/wine_menu.html",
         "title":"Wine",
         "pageTitle":"Wine Menu",
         "init":"wine"
     },
-    "food":{
+    {
+        "id":"food",
         "url":"/food_menu.html",
         "title":"Food",
         "pageTitle":"Food Menu",
         "init":"food"
     }
-
-}
+]

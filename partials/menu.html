@@ -1,0 +1,95 @@
+{{title}}
+
+<div class="row row-menu">
+  <div class="col-sm-6 col-sm-offset-1">
+    <div class="menu-title-box">
+      <strong>TITLE</strong>
+    </div>
+    <div class="menu-description-box">
+      <div class="menu-description">
+        Description
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-5 menu-price-outer">
+    <div class="col-xs-6 menu-price-box">
+      <span class="menu-price">
+        $Price 1
+      </span>
+    </div>
+    <div class="col-xs-6 menu-price-box">
+      <span class="menu-price">
+        $Price 2
+      </span>
+    </div>
+  </div>
+</div>
+
+
+<div ng-repeat="section in menu.sections | orderBy:place">
+  <strong>{{section.header.title}}</strong>
+  <div ng-repeat="item in section.items">
+    {{item.title}}
+  </div>
+</div>
+
+
+<div ng-repeat="section in menu.sections | orderBy:place">
+
+  <div class="row row-menu">
+    <div class="col-sm-6 col-sm-offset-1">
+      <div class="menu-title-box">
+        <strong>{{section.header.title}}</strong>
+      </div>
+      <div class="menu-description-box">
+        <div class="menu-description">
+          Description
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-5 menu-price-outer">
+      <div class="col-xs-6 menu-price-box">
+        <span class="menu-price">
+          $Price 1
+        </span>
+      </div>
+      <div class="col-xs-6 menu-price-box">
+        <span class="menu-price">
+          $Price 2
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div ng-repeat="item in section.items">
+
+    <div class="row row-menu">
+    <div class="col-sm-6 col-sm-offset-1">
+        <div class="menu-title-box">
+          <strong>{{item.title}}</strong>
+        </div>
+        <div class="menu-description-box">
+          <div class="menu-description">
+            {{item.description}}
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-5 menu-price-outer">
+        <div class="col-xs-6 menu-price-box">
+          <span class="menu-price">
+            {{item.price.sm}}
+          </span>
+        </div>
+        <div class="col-xs-6 menu-price-box">
+          <span class="menu-price">
+            {{item.price.lg}}
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+</div>

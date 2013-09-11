@@ -90,11 +90,7 @@ h1, h2, h3, h4 h5, h6 {
 }
 
 
-#sip-menu h1, #sip-menu h2 {
-  /*margin-left: 20px;*/
-}
-
-#sip-menu h2 {
+.sip-container h2 {
   color: #C0392B;
   /*font-size: 42px;*/
   letter-spacing: 1px;
@@ -247,12 +243,12 @@ h1.page-title {
   margin: 0px;
 }
 
-#sip-menu h2 {
+.sip-container h2 {
   color: #C0392B;
   margin-bottom: 10px;
 }
 
-#sip-menu strong {
+.sip-container strong {
   color: #D35400;
   font-size: 18px;
 }

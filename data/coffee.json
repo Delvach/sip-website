@@ -9,9 +9,11 @@
         },
         "priceFormat":"coffeePrice"
     },
-    "sections":{
-        "espresso": {
+    "sections":[
+        {
+            "place":"0",
             "header":{
+                "id":"espresso",
                 "display":true,
                 "title":"Espresso Drinks",
                 "description":"",
@@ -80,8 +82,10 @@
 
             ]
         },
-        "coffee": {
+        {
+            "place":"1",
             "header":{
+                "id":"coffee",
                 "display":true,
                 "title":"Coffee Drinks",
                 "description":"",
@@ -109,8 +113,10 @@
                 }
             ]
         },
-        "hot": {
+        {
+            "place":"2",
             "header":{
+                "id":"hot",
                 "display":true,
                 "title":"Other Hot Beverages",
                 "description":"",
@@ -154,8 +160,10 @@
                 }
             ]
         },
-        "cold": {
+        {
+            "place":"3",
             "header":{
+                "id":"cold",
                 "display":true,
                 "title":"Cold Drinks",
                 "description":"",
@@ -255,8 +263,10 @@
                 }
             ]
         },
-        "cold": {
+        {
+            "place":"4",
             "header":{
+                "id":"extras",
                 "display":true,
                 "title":"Beverage Add Ons",
                 "description":"",
@@ -280,5 +290,5 @@
                 }
             ]
         }
-    }
+    ]
 }

@@ -3,7 +3,8 @@ $(function() {
     $.ajax({
         cache:false
     });
-    $('#nav').load('partials/nav.html', function() {
+
+    /* $('#nav').load('partials/nav.html', function() {
 
         $.getJSON('data/nav.json', {cache:false}, function(nav_data) {
 
@@ -24,7 +25,7 @@ $(function() {
                 current_page = curr_page.init;
             }
         });
-    });
+    }); */
     $('#footer').load('partials/footer.html', function() {});
 });
 

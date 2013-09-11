@@ -1,55 +1,135 @@
+<div id="main" class="container sip-container">
 
-<div id="sip-carousel" class="carousel slide">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#sip-carousel" data-slide-to="0" class="active"></li>
-    <li data-target="#sip-carousel" data-slide-to="1"></li>
-    <li data-target="#sip-carousel" data-slide-to="2"></li>
-  </ol>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="img/carousel/slide_1.jpg" alt="...">
-      <div class="carousel-caption">
-        <h3>Delicious Food!</h3>
-        <p>Now available without salmonela</p>
+  <div id="sip-carousel" class="carousel slide">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#sip-carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#sip-carousel" data-slide-to="1"></li>
+      <li data-target="#sip-carousel" data-slide-to="2"></li>
+      <li data-target="#sip-carousel" data-slide-to="3"></li>
+      <li data-target="#sip-carousel" data-slide-to="4"></li>
+      <!--<li data-target="#sip-carousel" data-slide-to="5"></li>-->
+      <!--<li data-target="#sip-carousel" data-slide-to="6"></li>-->
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="img/carousel/slide_logo.jpg" alt="SiP">
       </div>
+
+      <div class="item">
+        <a href="/wine_menu.html">
+          <img src="img/carousel/slide_wine_bottles.jpg" alt="Wine">
+        </a>
+      </div>
+
+      <div class="item">
+        <a href="/food_menu.html">
+          <img src="img/carousel/slide_snacks.jpg" alt="Snacks">
+        </a>
+      </div>
+
+      <div class="item">
+        <a href="/food_menu.html">
+          <img src="img/carousel/slide_pizza.jpg" alt="Pizza">
+        </a>
+      </div>
+
+      <div class="item">
+        <img src="img/carousel/slide_2.jpg" alt="Wake up with SiP!">
+        <!--<div class="carousel-caption">-->
+          <!--<h3>Wake up with SiP!</h3>-->
+          <!--<p>Start your day right with one of our hand-made espressos, lattes, teas and coffees.</p>-->
+        <!--</div>-->
+      </div>
+
+      <!--<div class="item">-->
+        <!--<img src="img/carousel/slide_1.jpg" alt="Relax">-->
+        <!--<div class="carousel-caption">-->
+          <!--<h3>Relax</h3>-->
+          <!--<p>Whether you're enjoying the company of friends or a good book, SiP has you covered.</p>-->
+        <!--</div>-->
+      <!--</div>-->
+
+      <!--<div class="item">-->
+        <!--<img src="img/carousel/slide_3.jpg" alt="Recharge">-->
+        <!--<div class="carousel-caption">-->
+          <!--<h3>Recharge</h3>-->
+          <!--<p>If you're on the run, our fresh baked good and special items will keep you going for class, work, or play!</p>-->
+        <!--</div>-->
+      </div>
+
+
+
+
     </div>
 
-    <div class="item">
-      <img src="img/carousel/slide_2.jpg" alt="...">
-      <div class="carousel-caption">
-        <h3>Wonderful Beverages</h3>
-        <p>Sub text</p>
-      </div>
-    </div>
+    <!-- Controls -->
+    <a class="left carousel-control" href="#sip-carousel" data-slide="prev">
+      <span class="icon-prev"></span>
+    </a>
+    <a class="right carousel-control" href="#sip-carousel" data-slide="next">
+      <span class="icon-next"></span>
+    </a>
+  </div>
 
-    <div class="item">
-      <img src="img/carousel/slide_3.jpg" alt="...">
-      <div class="carousel-caption">
-        <h3>Wonderful Beverages</h3>
-        <p>Sub text</p>
+  <div class="container" id="promos">
+    <div class="row">
+
+      <div class="col-md-4 pane pane1">
+        <a href="coffee_menu.html">
+          <h3>Coffee, Espresso & Lattes</h3>
+          <p></p>
+        </a>
+      </div>
+      <div class="col-md-4 pane pane2">
+        <h3>Happy Hour</h3>
+
+        <div class="container">
+
+          <div class="container text-center">
+            <strong>3:33pm - 6:33pm</strong>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">Hours Wines</div>
+            <div class="col-xs-6">$5</div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">Wine by the glass</div>
+            <div class="col-xs-6">$1 off</div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">HOP North IPA</div>
+            <div class="col-xs-6">$4.15</div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">HOSS</div>
+            <div class="col-xs-6">$4.15</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 pane pane3">
+        <h3>Hours</h3>
+        <div id="hours"></div>
       </div>
     </div>
 
   </div>
 
-  <!-- Controls -->
-  <a class="left carousel-control" href="#sip-carousel" data-slide="prev">
-    <span class="icon-prev"></span>
-  </a>
-  <a class="right carousel-control" href="#sip-carousel" data-slide="next">
-    <span class="icon-next"></span>
-  </a>
-</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Welcome!</h3>
+        <p>Description!</p>
+      </div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-sm-4" id="promo1">
-      <div class="inner">Food</div>
+      <div class="col-md-6 container" id="hours">
+
+
+      </div>
     </div>
-    <div class="col-sm-4" id="promo2"><div class="inner">Drink</div></div>
-    <div class="col-sm-4" id="promo3"><div class="inner">Clowns</div></div>
   </div>
+
 </div>
