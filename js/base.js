@@ -6,7 +6,7 @@ $(function() {
     $('#nav').load('partials/nav.html', function() {
 
         $.getJSON('data/nav.json', {cache:false}, function(nav_data) {
-
+//            console.log(nav_data);
             var curr_page = getPageData(window.location.pathname, nav_data);
             var nav  = $('ul#bs-nav-list');
             if(curr_page.pageTitle) document.title += ' - ' + curr_page.pageTitle;
