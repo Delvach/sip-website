@@ -29,6 +29,10 @@
                     "price":"1.25"
                 },
                 {
+                    "title":"Cookies",
+                    "price":"1.80"
+                },
+                {
                     "title":"Bagel - Plain",
                     "price":"1.70"
                 },
@@ -50,7 +54,7 @@
                 },
                 {
                     "title":"Breakfast Burrito",
-                    "price":"4.50"
+                    "price":"4.75"
                 }
             ]
         }
