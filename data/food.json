@@ -34,11 +34,12 @@
                     "description":"Soybeans steamed, sprinkled with sea salt & drizzle of olive oil.",
                     "price":{
                         "sm":"",
-                        "lg":"4.25"
+                        "lg":"4.50"
                     }
                 },
                 {
                     "title":"SIP Salad",
+                    "disabled":true,
                     "description":"Mixed greens, red pepper, feta, mandarin wedges and completed with our house made orange balsamic vinaigrette.",
                     "price":{
                         "sm":"",
@@ -56,7 +57,7 @@
                 },
                 {
                     "title":"Arugula Salad",
-                    "description":"Arugula, house roasted tomatoes, walnuts, shaved Lake County Sharp, finished with lemon vinaigrette.",
+                    "description":"Arugula, sun-dried tomatoes, sunflower seeds, shaved Lake County Sharp, finished with lemon vinaigrette.",
                     "price":{
                         "sm":"",
                         "lg":"7.50"
@@ -120,7 +121,7 @@
                     "description":"Holland, hard, ripened for over a year",
                     "price":{
                         "sm":"",
-                        "lg":"3.75"
+                        "lg":"4.00"
                     }
                 },
                 {
@@ -198,7 +199,7 @@
                 },
                 {
                     "title":"Marinara",
-                    "description":"House made red sauce, oregano, garlic (no cheese).",
+                    "description":"House made red sauce, oregano, garlic (no cheese - Add mozzarella $1).",
                     "pairing":{
                         "name":"Hangtime Pinot Noir ",
                         "price":"9.00"
@@ -210,26 +211,26 @@
                 },
                 {
                     "title":"Bianco",
-                    "description":"Garlic and olive oil, mozzarella and pecorino cheese, arugula with lemon vinaigrette.",
+                    "description":"Garlic and olive oil, mozzarella, arugula with lemon vinaigrette.",
                     "pairing":{
                         "name":"Villa Maria Sauvignon Blanc",
                         "price":"8.00"
                     },
                     "price":{
                         "sm":"",
-                        "lg":"8.50"
+                        "lg":"7.50"
                     }
                 },
                 {
                     "title":"Pepperoni",
-                    "description":"House made red sauce, mozzarella, caramelized onions, pepperoni.",
+                    "description":"House made red sauce, mozzarella, pepperoni.",
                     "pairing":{
                         "name":"Four Vines Zinfandel",
                         "price":"8.00"
                     },
                     "price":{
                         "sm":"",
-                        "lg":"8.50"
+                        "lg":"7.50"
                     }
                 },
                 {
@@ -246,7 +247,7 @@
                 },
                 {
                     "title":"Pesto",
-                    "description":"Mozzarella and house roasted tomatoes.",
+                    "description":"Mozzarella and sun-dried tomatoes. (Add arugula - $1)",
                     "pairing":{
                         "name":"Oggi Pinot Grigio (house white)",
                         "price":"6.00"

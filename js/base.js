@@ -223,7 +223,7 @@ var format = {
     'foodDescription':function(item) {
         var box = $('<div>', {class:'menu-description'});
         box.append($('<span>',{text: item.description}));
-        if(item.pairing) {
+        if(item.pairing && false) {
             var pairing = $('<em>',{
                 text: 'Suggested pairing: ' + item.pairing.name + ' - $' + item.pairing.price + '/glass'
             })
