@@ -60,13 +60,13 @@
                     "price":"5.00"
                 },
                 {
-                    "title":"Great Divide Hercules Double IPA",
-                    "description":"Big HOPS, well balanced, nutty, malty and sweetness",
-                    "origin":"Denver",
-                    "abv":"10",
+                    "title":"Guest Tap",
+                    "description":"Check out our rotating selection of local brews!",
+                    "origin":"",
+                    "abv":"",
                     "ibu":"",
                     "size":"",
-                    "price":"5.00"
+                    "price":""
                 }
             ]
         },
