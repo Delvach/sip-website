@@ -241,7 +241,8 @@ var format = {
     },
     'wineTitle':function(item) {
         var box = $('<span>');
-        var title = item.type + ' - ' + item.title;
+
+        var title = (item.type ? item.type + ' - ' : '') + item.title;
         var extra = item.origin;
         if(item.year) extra += ', ' + item.year;
         box.append($('<strong>', {text:title}));

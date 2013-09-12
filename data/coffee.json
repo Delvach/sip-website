@@ -22,16 +22,16 @@
             },
             "items":[
                 {
-                    "title":"Café Latte",
+                    "title":"Latte",
                     "description":"Espresso and steamed milk",
                     "price":{
                         "sm":"3.50",
-                        "lg":"3.75"
+                        "lg":"3.80"
                     }
                 },
                 {
-                    "title":"Café Mocha",
-                    "description":"Like the café latte but with chocolaty goodness",
+                    "title":"Mocha",
+                    "description":"Like the latte but with chocolaty goodness",
                     "price":{
                         "sm":"3.75",
                         "lg":"4.00"
@@ -42,19 +42,20 @@
                     "description":"Espresso topped to the brim with steamed milk foam",
                     "price":{
                         "sm":"3.50",
-                        "lg":"3.75"
+                        "lg":"3.80"
                     }
                 },
                 {
                     "title":"Americano",
                     "description":"Espresso with hot water",
                     "price":{
-                        "sm":"2.00",
-                        "lg":"2.25"
+                        "sm":"2.25",
+                        "lg":"2.50"
                     }
                 },
                 {
                     "title":"Latte Macchiato",
+                    "disabled":true,
                     "description":"Steamed foam marked with a single or double espresso shot",
                     "price":{
                         "sm":"2.75",
@@ -62,15 +63,16 @@
                     }
                 },
                 {
-                    "title":"Espresso",
+                    "title":"Espresso Allegro",
                     "description":"Single / Double shot of espresso",
                     "price":{
                         "sm":"2.00",
-                        "lg":"2.25"
+                        "lg":"2.30"
                     }
                 },
                 {
                     "title":"Poor Man’s Mocha",
+                    "disabled":true,
                     "description":"Café Au Lait with chocolate syrup",
                     "price":{
                         "sm":"3.60",
@@ -92,18 +94,18 @@
             },
             "items":[
                 {
-                    "title":"Brewed Coffee  (regular / decaf)",
-                    "description":"",
+                    "title":"Allegro Café Blend",
+                    "description":"(medium roast)",
                     "price":{
                         "sm":"2.00",
-                        "lg":"2.25"
+                        "lg":"2.30"
                     }
                 },
                 {
-                    "title":"Café Au Lait",
+                    "title":"Au Lait",
                     "description":"Half steamed milk and brewed coffee",
                     "price":{
-                        "sm":"2.50",
+                        "sm":"2.70",
                         "lg":"3.00"
                     }
                 }
@@ -122,10 +124,10 @@
             "items":[
                 {
                     "title":"Chai Latte",
-                    "description":"Chai tea blend with steamed milk",
+                    "description":"Spicy or Regular Chai tea blend with steamed milk",
                     "price":{
-                        "sm":"3.25",
-                        "lg":"3.50"
+                        "sm":"3.50",
+                        "lg":"3.80"
                     }
                 },
                 {
@@ -140,7 +142,7 @@
                     "title":"Tea",
                     "description":"Assorted selection of hot tea",
                     "price":{
-                        "sm":"2.50",
+                        "sm":"2.00",
                         "lg":""
                     }
                 },
@@ -148,7 +150,7 @@
                     "title":"Cambric",
                     "description":"Hot tea with steamed milk",
                     "price":{
-                        "sm":"3.00",
+                        "sm":"2.50",
                         "lg":""
                     }
                 }
@@ -167,10 +169,10 @@
             "items":[
                 {
                     "title":"Iced Coffee",
-                    "description":"Our house brewed  coffee over ice",
+                    "description":"Allegro house brewed coffee over ice",
                     "price":{
                         "sm":"",
-                        "lg":"2.25"
+                        "lg":"2.50"
                     }
                 },
                 {
@@ -178,7 +180,7 @@
                     "description":"Espresso and milk served over ice",
                     "price":{
                         "sm":"",
-                        "lg":"3.50"
+                        "lg":"3.75"
                     }
                 },
                 {
@@ -186,7 +188,7 @@
                     "description":"Espresso and milk with chocolate over Ice",
                     "price":{
                         "sm":"",
-                        "lg":"3.75"
+                        "lg":"4.00"
                     }
                 },
                 {
@@ -199,10 +201,10 @@
                 },
                 {
                     "title":"Iced Chai Latte",
-                    "description":"Chai tea blend with milk over ice",
+                    "description":"Spicy or Regular Chai tea blend with milk over ice",
                     "price":{
                         "sm":"",
-                        "lg":"3.50"
+                        "lg":"3.75"
                     }
                 },
                 {
@@ -212,7 +214,21 @@
                         "sm":"",
                         "lg":"2.50"
                     }
-                },
+                }
+
+            ]
+        },
+        "extras": {
+            "header":{
+                "display":true,
+                "title":"Cold bottles & cans",
+                "description":"",
+                "price":{
+                    "sm":"",
+                    "lg":""
+                }
+            },
+            "items":[
                 {
                     "title":"Izze",
                     "description":"Apple, Clementine, Blackberry",
@@ -239,7 +255,7 @@
                 },
                 {
                     "title":"Zevia Soda",
-                    "description":"Grape / Cream Soda / Ginger / Root Beer",
+                    "description":"Ask for flavors",
                     "price":{
                         "sm":"",
                         "lg":"2.25"
@@ -252,10 +268,26 @@
                         "sm":"",
                         "lg":"1.00"
                     }
+                },
+                {
+                    "title":"Sunny Delight",
+                    "description":"Orange Drink",
+                    "price":{
+                        "sm":"",
+                        "lg":"2.00"
+                    }
+                },
+                {
+                    "title":"Tropicana",
+                    "description":"100% Orange Juice",
+                    "price":{
+                        "sm":"",
+                        "lg":"2.25"
+                    }
                 }
             ]
         },
-        "cold": {
+        "extras": {
             "header":{
                 "display":true,
                 "title":"Beverage Add Ons",
