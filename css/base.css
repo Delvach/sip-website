@@ -218,6 +218,11 @@ h1.page-title {
 .pane h3 {
   font-size: 30px;
   text-align: center;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+
+.pane div {
+  text-shadow: 1px 1px 1px black;
 }
 
 #promos .pane1 {
@@ -225,7 +230,7 @@ h1.page-title {
 }
 
 #promos .pane2 {
-  background: url(/img/promo/promo_bg_glassses_dark.jpg);
+  background: url(/img/promo/promo_bg_glasses_dark.jpg);
 }
 
 #promos .pane3 {

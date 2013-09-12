@@ -1,7 +1,7 @@
 {
     "home":{
         "url":"/",
-        "title":"Welcome!",
+        "title":"About",
         "pageTitle":"",
         "init":"carousel"
     },
