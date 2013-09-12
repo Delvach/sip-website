@@ -218,10 +218,10 @@
 
             ]
         },
-        "extras": {
+        "bottles": {
             "header":{
                 "display":true,
-                "title":"Cold bottles & cans",
+                "title":"Other Cold Drinks",
                 "description":"",
                 "price":{
                     "sm":"",
