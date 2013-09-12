@@ -15,10 +15,20 @@ $(function() {
             }
             $.each(nav_data, function(idx, val) {
                 var li = $('<li/>');
-                if(curr_page.url == val.url) li.addClass('active');
-                var a = $('<a/>').appendTo(li).text(val.title).attr('href',val.url);
+                var a  = $('<a/>')
+                if(curr_page.url == val.url) {
+                    li.addClass('active');
+
+                    if(curr_page.url != '/') $('.navbar-brand').attr('href', val.url);
+                } else {
+                    a.attr('href',val.url);
+                }
+                a.appendTo(li).text(val.title);
                 li.appendTo(nav);
             })
+            if(curr_page.url != '/') {
+                console.log('output');
+            }
             if(curr_page.init) {
                 init[curr_page.init]();
                 current_page = curr_page.init;

@@ -218,15 +218,14 @@ h1.page-title {
 .pane h3 {
   font-size: 30px;
   text-align: center;
+}
+
+.pane div, .pane h2, .pane li, .pane a {
   text-shadow: 1px 1px 1px rgba(0,0,0,.5);
 }
 
-.pane div {
-  text-shadow: 1px 1px 1px black;
-}
-
 #promos .pane1 {
-  background: url(/img/promo/promo_coffee.jpg);
+  /*background: url(/img/promo/promo_coffee.jpg);*/
 }
 
 #promos .pane2 {
@@ -244,6 +243,11 @@ h1.page-title {
 
 #hours {
 
+}
+
+.index_main {
+  background-color: #fff;
+  padding: 20px;
 }
 
 .inner {
