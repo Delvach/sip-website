@@ -199,9 +199,9 @@
                 },
                 {
                     "title":"Marinara",
-                    "description":"House made red sauce, oregano, garlic (no cheese - Add mozzarella $1).",
+                    "description":"House made red sauce, oregano, garlic. (no cheese - Add mozzarella $1)",
                     "pairing":{
-                        "name":"Hangtime Pinot Noir ",
+                        "name":"Hangtime Pinot Noir",
                         "price":"9.00"
                     },
                     "price":{
@@ -291,7 +291,7 @@
                     "description":"Vanilla ice cream, shot of espresso, crumbled glazed almonds.",
                     "price":{
                         "sm":"",
-                        "lg":"4.00"
+                        "lg":"4.50"
                     }
                 }
             ]

@@ -35,6 +35,7 @@
                 },
                 {
                     "type":"Red",
+                    "disabled":true,
                     "title":"SiP house red",
                     "origin":"",
                     "description":"",
@@ -48,8 +49,19 @@
                     "type":"Prosecco",
                     "title":"Zonin",
                     "origin":"Italy",
-                    "description":"This 'off dry' wine delivers sweet lime and peach character with subtle mineral notes.",
+                    "description":"",
                     "year":"",
+                    "price":{
+                        "sm":"7.00",
+                        "lg":""
+                    }
+                },
+                {
+                    "type":"Riesling",
+                    "title":"Chateau St. Michelle",
+                    "origin":"Columbia Valley, Washington",
+                    "description":"",
+                    "year":"2011",
                     "price":{
                         "sm":"7.00",
                         "lg":"24.00"
@@ -59,7 +71,7 @@
                     "type":"Chardonnay",
                     "title":"Seven Falls",
                     "origin":"Wahluke Slope, Washington",
-                    "description":"Dried pineapple and oak.",
+                    "description":"",
                     "year":"2011",
                     "price":{
                         "sm":"9.00",
@@ -70,7 +82,7 @@
                     "type":"Sauvignon Blanc",
                     "title":"Villa Maria 'Private Bin'",
                     "origin":"New Zealand",
-                    "description":"A juicy mouthfeel and a delicious finish.",
+                    "description":"",
                     "year":"2011",
                     "price":{
                         "sm":"8.00",
@@ -81,7 +93,7 @@
                     "type":"Orvieto",
                     "title":"Santa Cristina 'Campogrande', Orvieto Classico",
                     "origin":"Umbria, Italy",
-                    "description":"Soft and well-balanced on the palate.",
+                    "description":"",
                     "year":"2011",
                     "price":{
                         "sm":"7.00",
@@ -92,18 +104,18 @@
                     "type":"Moscato",
                     "title":"Columbia Crest 'Grand Estates'",
                     "origin":"Columbia Valley, Washington",
-                    "description":"Accented by notes of orchard blossoms.",
+                    "description":"",
                     "year":"2010",
                     "price":{
-                        "sm":"7.00",
-                        "lg":"24.00"
+                        "sm":"8.00",
+                        "lg":"28.00"
                     }
                 },
                 {
                     "type":"Chardonnay",
                     "title":"'Hands of Time' by Stag Leap Wine Cellars",
                     "origin":"Napa, California",
-                    "description":"Aromas of pineapple, citrus, kiwi and fragrant honeysuckle bloom energetically from the glass, succulent and fruit-forward, this luscious Pinot Blanc offers mouth-filling flavors of melon, apple and lemon zest that leisurely retreat to a fresh, palate cleansing finish.",
+                    "description":"",
                     "year":"2010",
                     "price":{
                         "sm":"",
@@ -111,36 +123,80 @@
                     }
                 },
                 {
+                    "type":"Pinot Gris",
+                    "title":"Erath",
+                    "origin":"Oregon",
+                    "description":"",
+                    "year":"2011",
+                    "price":{
+                        "sm":"",
+                        "lg":"33.00"
+                    }
+                },
+                {
                     "type":"Pinot Noir",
                     "title":"Hangtime",
                     "origin":"California",
-                    "description":"Dark berry notes and spicy notes from oak aging, the wine drinks of juicy blackberry, ripe plums and a touch of blueberry with generous fruit flavors, plenty of structure and a velvety finish.",
+                    "description":"",
                     "year":"2010",
                     "price":{
                         "sm":"9.00",
                         "lg":"32.00"
+                    }
+                },
+                {
+                    "type":"Zinfadel",
+                    "title":"Four Vines 'Truant'",
+                    "origin":"California",
+                    "description":"",
+                    "year":"2011",
+                    "price":{
+                        "sm":"8.00",
+                        "lg":"28.00"
                     }
                 },
                 {
                     "type":"Cabernet",
-                    "title":"Seven Falls",
-                    "origin":"Wahluke Slope, Washington",
-                    "description":"Flowery notes of violets and jasmine, ripe red fruits, like plums, cherries and chocolate morello cherry. Aging in oak barrels adds complexity, and notes of hazelnuts, almonds and cinnamon.",
-                    "year":"2010",
+                    "title":"Paripaso",
+                    "origin":"Paso Robles, California",
+                    "description":"",
+                    "year":"2011",
                     "price":{
-                        "sm":"9.00",
-                        "lg":"32.00"
+                        "sm":"8.00",
+                        "lg":"28.00"
+                    }
+                },
+                {
+                    "type":"Malbec",
+                    "title":"Gamari 'Reserva'",
+                    "origin":"Uco Valley, Argentina",
+                    "description":"",
+                    "year":"2011",
+                    "price":{
+                        "sm":"8.00",
+                        "lg":"28.00"
                     }
                 },
                 {
                     "type":"Pinot Noir",
-                    "title":"Erath",
-                    "origin":"Oregon",
-                    "description":"Opening aromas of blackberries, plums and dark chocolate carry through to the palate. Accents of spring wildflowers, spiced honey, and pie crust highlight complexity.",
-                    "year":"2011",
+                    "title":"Isabel Mondavi",
+                    "origin":"Carneros Estate, Napa, CA",
+                    "description":"",
+                    "year":"2009",
                     "price":{
                         "sm":"",
-                        "lg":"44.00"
+                        "lg":"44"
+                    }
+                },
+                {
+                    "type":"Cabernet",
+                    "title":"Katherine Goldschmidt 'Crazy Creek'",
+                    "origin":"Alexander Valley, CA",
+                    "description":"",
+                    "year":"2010",
+                    "price":{
+                        "sm":"",
+                        "lg":"39.00"
                     }
                 }
             ]
