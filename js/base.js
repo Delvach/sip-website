@@ -19,7 +19,7 @@ $(function() {
                 if(curr_page.url == val.url) {
                     li.addClass('active');
 
-                    if(curr_page.url != '/') $('.navbar-brand').attr('href', val.url);
+                    if(curr_page.url != '/') $('.navbar-brand').attr('href', '/');
                 } else {
                     a.attr('href',val.url);
                 }
@@ -41,7 +41,7 @@ $(function() {
 
 var init = {
     'carousel':function() {
-        setTimeout(function() { $("#sip-carousel").carousel({interval:5000}) },1000);
+        setTimeout(function() { $("#sip-carousel").carousel({interval:8000}) },1000);
         $.getJSON('data/hours.json', {cache:false}, function(data) {
             loadHours('#hours', data);
         }).fail(function( jqxhr, textStatus, error ) {
