@@ -229,6 +229,10 @@ h1.page-title {
   background-color: #D35400;
 }
 
+#promos {
+  background-color: #fff;
+}
+
 #promos .pane2 {
   background: url(/img/promo/promo_bg_glasses_dark.jpg);
 }
