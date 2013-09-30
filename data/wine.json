@@ -80,8 +80,8 @@
                     "description":"citrus, pear, honey, hint of butterscotch",
                     "year":"2011",
                     "price":{
-                        "sm":"9.00",
-                        "lg":"32.00"
+                        "sm":"8.00",
+                        "lg":"28.00"
                     }
                 },
                 {
@@ -203,7 +203,7 @@
                 {
                     "type":"Cabernet",
                     "title":"Lapostolle",
-                    "origin":"Rapel Valley, Chili",
+                    "origin":"Rapel Valley, Chile",
                     "description":"red currant, strawberry and blackberry",
                     "year":"2011",
                     "price":{
