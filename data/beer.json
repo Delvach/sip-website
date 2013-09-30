@@ -24,7 +24,27 @@
             },
             "items":[
                 {
+                    "title":"Great Divide 'Nomad' Pilsner",
+                    "description":"German malts, floral nose, crisp and balanced",
+                    "origin":"Denver",
+                    "abv":"5.4",
+                    "ibu":"",
+                    "size":"",
+                    "price":"5.00"
+                },
+                {
+                    "title":"Great Divide 'Titan' IPA",
+                    "description":"Aggressively hopped, rich, malty & crisp finish",
+                    "origin":"Denver",
+                    "abv":"7.1",
+                    "ibu":"",
+                    "size":"",
+                    "price":"5.00"
+                },
+
+                {
                     "title":"Upslope Craft Lager",
+                    "disabled":true,
                     "description":"Light bodied American lager, crisp malt, subtle Saaz hops",
                     "origin":"Boulder",
                     "abv":"2.8",
@@ -33,7 +53,7 @@
                     "price":"5.00"
                 },
                 {
-                    "title":"Odells 90 Schilling",
+                    "title":"Odell's 90 Schilling",
                     "description":"Medium bodied amber ale, inspired lighter style Scottish ale",
                     "origin":"Ft. Collins",
                     "abv":"5.3",
@@ -42,7 +62,27 @@
                     "price":"5.00"
                 },
                 {
+                    "title":"Odell's 'Cutthroat Porter'",
+                    "description":"Dark-roasted malts, hints of chocolate & coffee",
+                    "origin":"Ft. Collins",
+                    "abv":"5.1",
+                    "ibu":"",
+                    "size":"",
+                    "price":"5.00"
+                },
+                {
+                    "title":"Great Divide 'Hercules' Double IPA",
+                    "disabled":false,
+                    "description":"Big hops, balanced, nutty, malty & sweet",
+                    "origin":"Denver",
+                    "abv":"10.0",
+                    "ibu":"",
+                    "size":"",
+                    "price":"7.00"
+                },
+                {
                     "title":"Great Divide Hoss Rye Lager",
+                    "disabled":true,
                     "description":"German inspired, rich layered malty notes, crisp & dry",
                     "origin":"Denver",
                     "abv":"6.2",
@@ -52,6 +92,7 @@
                 },
                 {
                     "title":"Uinta Hop Notch IPA",
+                    "disabled":true,
                     "description":"Bold, refreshing, abundance of hops, smooth malt profile",
                     "origin":"Salt Lake",
                     "abv":"7.3",
@@ -61,6 +102,7 @@
                 },
                 {
                     "title":"Guest Tap",
+                    "disabled":false,
                     "description":"Check out our rotating selection of local brews!",
                     "origin":"",
                     "abv":"",
@@ -83,16 +125,16 @@
             "items":[
                 {
                     "title":"Boulevard Wheat",
-                    "description":"american style wheat, unfiltered, natural citrus flavor",
+                    "description":"American style wheat, unfiltered, natural citrus flavor.",
                     "origin":"Kansas City",
                     "abv":"4.4",
                     "ibu":"",
                     "size":"16oz",
-                    "price":"4.60"
+                    "price":"5.00"
                 },
                 {
-                    "title":"SKA True Blonde Ale",
-                    "description":"medium bodied blonde ale, touch of local honey, citrus hops",
+                    "title":"SKA 'True Blonde Ale'",
+                    "description":"Medium bodied blonde ale, touch of local honey, citrus hops.",
                     "origin":"Durango",
                     "abv":"5.3",
                     "ibu":"",
@@ -100,8 +142,18 @@
                     "price":"4.00"
                 },
                 {
+                    "title":"SKA 'Modus Hoperandi IPA'",
+                    "description":"Citrus aromas, pine scents, smooth finish.",
+                    "origin":"Durango",
+                    "abv":"6.8",
+                    "ibu":"",
+                    "size":"",
+                    "price":"4.00"
+                },
+                {
                     "title":"Uinta Wyld Extra Pale Ale",
-                    "description":"lighter bodied pale ale, aggressively dry hopped, organic",
+                    "disabled":true,
+                    "description":"Lighter bodied pale ale, aggressively dry hopped, organic.",
                     "origin":"Salt Lake",
                     "abv":"",
                     "ibu":"29",
@@ -110,6 +162,7 @@
                 },
                 {
                     "title":"SKA ESB (english special bitter)",
+                    "disabled":true,
                     "description":"crisp first sip, hoppy tongue, malty finish",
                     "origin":"Durango",
                     "abv":"5.7",
@@ -119,6 +172,7 @@
                 },
                 {
                     "title":"Santa Fe Happy Camper IPA",
+                    "disabled":true,
                     "description":"spicy / citric / floral infusion of hop character, balanced",
                     "origin":"Santa Fe",
                     "abv":"6.6",
@@ -127,16 +181,8 @@
                     "price":"4.00"
                 },
                 {
-                    "title":"SKA Modus Hoperandi IPA",
-                    "description":"citrus aromas, pine scents, bitter & hoppy, smooth finish",
-                    "origin":"Durango",
-                    "abv":"6.8",
-                    "ibu":"",
-                    "size":"",
-                    "price":"4.00"
-                },
-                {
                     "title":"Uinta Baba Black Lager",
+                    "disabled":true,
                     "description":"robust & smooth, full flavored lager, pitch black in color, organic",
                     "origin":"Salt Lake",
                     "abv":"",
@@ -152,13 +198,31 @@
                     "ibu":"",
                     "size":"",
                     "price":"4.00"
+                },
+                                {
+                    "title":"Santa Fe Brewing 'Java Stout'",
+                    "description":"Full-bodied, roasted malts, chocolate & coffee",
+                    "origin":"Santa Fe",
+                    "abv":"8.0",
+                    "ibu":"",
+                    "size":"",
+                    "price":"4.00"
+                },
+                                {
+                    "title":"Upslope 'Imperial' IPA",
+                    "description":"Subtle flavors of tropical fruit, citrus/pine/hops",
+                    "origin":"Boulder",
+                    "abv":"10.0",
+                    "ibu":"",
+                    "size":"19.2oz",
+                    "price":"10.00"
                 }
             ]
         },
-        "features":{
+        "cocktails":{
             "header":{
                 "display":true,
-                "title":"Features",
+                "title":"Cocktails",
                 "description":"",
                 "price":{
                     "sm":"",
@@ -167,22 +231,22 @@
             },
             "items":[
                 {
-                    "title":"Upslope Imperial IPA",
-                    "description":"subtle flavors of tropical fruit balanced with citrus/pine hop notes",
-                    "origin":"Boulder",
-                    "abv":"10",
+                    "title":"Margarita / Screwdriver / Martini / Gimlet / Coffee Cocktail / Mimosa",
+                    "description":"",
+                    "origin":"",
+                    "abv":"",
                     "ibu":"",
-                    "size":"19.2oz",
-                    "price":"11.00"
+                    "size":"",
+                    "price":"6.00"
                 },
                 {
-                    "title":"River North 'J Marie' Farmhouse Ale",
-                    "description":"saison, apricot on the nose, malty backbone, dry finish",
-                    "origin":"Denver",
-                    "abv":"7.5",
+                    "title":"Fun Mixers",
+                    "description":"Zevia soda, Izze sparkling, Coke/Diet Coke, OJ, Sunny D, Pellegrino",
+                    "origin":"",
+                    "abv":"",
                     "ibu":"",
-                    "size":"22oz",
-                    "price":"13.00"
+                    "size":"",
+                    "price":"6.00"
                 }
             ]
         }

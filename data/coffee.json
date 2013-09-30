@@ -68,6 +68,10 @@
                     "price":{
                         "sm":"2.00",
                         "lg":"2.30"
+                    },
+                    "size":{
+                        "sm":"single",
+                        "lg":"double"
                     }
                 },
                 {

@@ -198,9 +198,9 @@ var format = {
     'coffeePrice':function(item, section) {
         var price = getPriceArray(item.price);
         var sm = formatDollar(price.sm);
-        if(sm && section.header.price.sm) sm += ' / ' + section.header.price.sm;
+        if(sm && section.header.price.sm) sm += ' / ' + (item.size ? item.size.sm : section.header.price.sm);
         var lg = formatDollar(price.lg);
-        if(lg && section.header.price.lg) lg += ' / ' + section.header.price.lg;
+        if(lg && section.header.price.lg) lg += ' / ' + (item.size ? item.size.lg : section.header.price.lg);
         return {
             sm:sm,
             lg:lg
@@ -216,8 +216,8 @@ var format = {
     'beerDescription':function(item) {
         var box = $('<div>', {class:'menu-beer-description',text:item.description});
         var sub = $('<div>');
-        if(item.abv) sub.append([$('<span>', {text:'ABV: '}),$('<span>', {text:item.abv})]);
-        if(item.ibu) sub.append([$('<span>', {text:'IBU: '}),$('<span>', {text:item.ibu})]);
+        if(item.abv) sub.append([$('<span>', {text:'ABV: '}),$('<span>', {text:item.abv + '%'})]);
+        if(item.ibu) sub.append([$('<span>', {text:'IBU: '}),$('<span>', {text:item.ibu + '%'})]);
         box.append(sub);
         return box;
     },
