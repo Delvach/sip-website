@@ -10,6 +10,10 @@
         "titleFormat":"wineTitle",
         "priceFormat":"winePrice"
     },
+    "subheader":{
+        "description":"In addition to a regular selection of staff and customer favorites, we're pleased to offer a rotating selection of unique wines from around the globe.  Stop by to see what's new!",
+        "display":true
+    },
     "sections":{
         "all": {
             "header":{
@@ -24,6 +28,7 @@
             "items":[
                 {
                     "type":"",
+                    "disabled":true,
                     "title":"SiP house wine",
                     "origin":"",
                     "description":"",
@@ -49,7 +54,7 @@
                     "type":"Prosecco",
                     "title":"Zonin",
                     "origin":"Italy",
-                    "description":"",
+                    "description":"bub bub bubbles... semi sweet, well-balanced and delicious",
                     "year":"",
                     "price":{
                         "sm":"7.00",
@@ -58,9 +63,9 @@
                 },
                 {
                     "type":"Riesling",
-                    "title":"Chateau St. Michelle",
+                    "title":"Chateau Ste Michelle",
                     "origin":"Columbia Valley, Washington",
-                    "description":"",
+                    "description":"off dry, sweet lime & peach with slight mineral notes",
                     "year":"2011",
                     "price":{
                         "sm":"7.00",
@@ -69,6 +74,19 @@
                 },
                 {
                     "type":"Chardonnay",
+                    "disabled":false,
+                    "title":"Paripaso",
+                    "origin":"Paso Robles, CA",
+                    "description":"citrus, pear, honey, hint of butterscotch",
+                    "year":"2011",
+                    "price":{
+                        "sm":"9.00",
+                        "lg":"32.00"
+                    }
+                },
+                {
+                    "type":"Chardonnay",
+                    "disabled":true,
                     "title":"Seven Falls",
                     "origin":"Wahluke Slope, Washington",
                     "description":"",
@@ -80,6 +98,19 @@
                 },
                 {
                     "type":"Sauvignon Blanc",
+                    "disabled":false,
+                    "title":"Tangley Oaks",
+                    "origin":"Napa, CA",
+                    "description":"bright pear, citrus and a lingering finish",
+                    "year":"2011",
+                    "price":{
+                        "sm":"8.00",
+                        "lg":"28.00"
+                    }
+                },
+                {
+                    "type":"Sauvignon Blanc",
+                    "disabled":true,
                     "title":"Villa Maria 'Private Bin'",
                     "origin":"New Zealand",
                     "description":"",
@@ -91,9 +122,9 @@
                 },
                 {
                     "type":"Orvieto",
-                    "title":"Santa Cristina 'Campogrande', Orvieto Classico",
+                    "title":"Santa Cristina",
                     "origin":"Umbria, Italy",
-                    "description":"",
+                    "description":"fruity & floral aromas, lemon zest & white flowers",
                     "year":"2011",
                     "price":{
                         "sm":"7.00",
@@ -102,39 +133,41 @@
                 },
                 {
                     "type":"Moscato",
-                    "title":"Columbia Crest 'Grand Estates'",
+                    "title":"Columbia Crest",
                     "origin":"Columbia Valley, Washington",
-                    "description":"",
+                    "description":"mandarin orange, ruby grapefruit, notes of orchard blossom",
                     "year":"2010",
                     "price":{
                         "sm":"8.00",
                         "lg":"28.00"
                     }
                 },
-                {
-                    "type":"Chardonnay",
-                    "title":"'Hands of Time' by Stag Leap Wine Cellars",
-                    "origin":"Napa, California",
-                    "description":"",
-                    "year":"2010",
-                    "price":{
-                        "sm":"",
-                        "lg":"39.00"
-                    }
-                },
+
                 {
                     "type":"Pinot Gris",
                     "title":"Erath",
                     "origin":"Oregon",
-                    "description":"",
+                    "description":"aromas of pineapple and honeysuckle, luscious melon on the palate",
                     "year":"2011",
                     "price":{
-                        "sm":"",
-                        "lg":"33.00"
+                        "sm":"9.00",
+                        "lg":"32.00"
+                    }
+                },
+                {
+                    "type":"Chardonnay",
+                    "title":"'Stag's Leap",
+                    "origin":"Napa, California",
+                    "description":"outstanding, world class producer, creamy, subtle oak",
+                    "year":"2010",
+                    "price":{
+                        "sm":"10.00",
+                        "lg":"36.00"
                     }
                 },
                 {
                     "type":"Pinot Noir",
+                    "disabled":true,
                     "title":"Hangtime",
                     "origin":"California",
                     "description":"",
@@ -145,7 +178,42 @@
                     }
                 },
                 {
+                    "type":"Pinot Noir",
+                    "disabled":false,
+                    "title":"Tangley Oaks",
+                    "origin":"North Coast, CA",
+                    "description":"bright raspberry, silky finish, soft tannins",
+                    "year":"2010",
+                    "price":{
+                        "sm":"8.00",
+                        "lg":"28.00"
+                    }
+                },
+                {
+                    "type":"Shiraz",
+                    "title":"Domaine Terlato & Chapoutier",
+                    "origin":"Australia",
+                    "description":"black fruit aromas, firm structure, old world style",
+                    "year":"2011",
+                    "price":{
+                        "sm":"8.00",
+                        "lg":"28.00"
+                    }
+                },
+                {
+                    "type":"Cabernet",
+                    "title":"Lapostolle",
+                    "origin":"Rapel Valley, Chili",
+                    "description":"red currant, strawberry and blackberry",
+                    "year":"2011",
+                    "price":{
+                        "sm":"8.00",
+                        "lg":"28.00"
+                    }
+                },
+                {
                     "type":"Zinfadel",
+                    "disabled":true,
                     "title":"Four Vines 'Truant'",
                     "origin":"California",
                     "description":"",
@@ -157,6 +225,7 @@
                 },
                 {
                     "type":"Cabernet",
+                    "disabled":true,
                     "title":"Paripaso",
                     "origin":"Paso Robles, California",
                     "description":"",
@@ -168,6 +237,19 @@
                 },
                 {
                     "type":"Malbec",
+                    "disabled":false,
+                    "title":"Hess Select",
+                    "origin":"Argentina",
+                    "description":"fruit forward raspberry, cherry & pomegranate aromas light oak",
+                    "year":"2011",
+                    "price":{
+                        "sm":"8.00",
+                        "lg":"28.00"
+                    }
+                },
+                {
+                    "type":"Malbec",
+                    "disabled":true,
                     "title":"Gamari 'Reserva'",
                     "origin":"Uco Valley, Argentina",
                     "description":"",
@@ -190,9 +272,9 @@
                 },
                 {
                     "type":"Cabernet",
-                    "title":"Katherine Goldschmidt 'Crazy Creek'",
+                    "title":"Katherine Goldschmidt",
                     "origin":"Alexander Valley, CA",
-                    "description":"",
+                    "description":"plums, dark cherries, layered & silky finish",
                     "year":"2010",
                     "price":{
                         "sm":"",

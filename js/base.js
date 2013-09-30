@@ -112,7 +112,7 @@ function formatDollar(val, dollarOnly) {
 }
 
 function createMenu(targetID, data) {
-    var target = $(targetID), s, i, descriptionFormatter, titleFormatter, priceFormatter, row_class;
+    var target = $(targetID), s, i, descriptionFormatter, titleFormatter, priceFormatter, row_class, row;
     if(data.header.display) target.append(createMenuItem($('<h3>', {text:data.header.title}),
         data.header.description ? data.header.description : '',
         getPriceArray(data.header.price),
@@ -144,6 +144,11 @@ function createMenu(targetID, data) {
         }
     }
 
+    if(data.subheader && data.subheader.display) {
+        row = $('<div>',{class:'menu-row'})
+        target.append(row.append($("<div>", {text:data.subheader.description, class:'col-sm-offset-1 col-sm-10'})));
+        console.log('test');
+    }
     for(sec_id in data.sections) {
         row_class = 'menu-subheader-row';
         s = data.sections[sec_id];
@@ -254,7 +259,7 @@ var format = {
 
         var title = (item.type ? item.type + ' - ' : '') + item.title;
         var extra = item.origin;
-        if(item.year) extra += ', ' + item.year;
+        //if(item.year) extra += ', ' + item.year;
         box.append($('<strong>', {text:title}));
         //var title = item.title;
         if(item.origin) box.append($('<span>', {text:extra, class:'menu-origin'}));
