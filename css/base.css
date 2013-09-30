@@ -145,6 +145,11 @@ h1.page-title {
   color: #eee;
 }
 
+#footer .creator a {
+  color: #ccc;
+  font-size: 12px;
+}
+
 .temp {
 
 }
