@@ -12,6 +12,104 @@
         "descriptionFormat":"foodDescription"
     },
     "sections":{
+        "pizza": {
+            "header":{
+                "display":true,
+                "title":"Flatbread Pizzas",
+                "description":"",
+                "price":{
+                    "sm":"",
+                    "lg":""
+                }
+            },
+            "items":[
+
+                {
+                    "title":"Marinara",
+                    "description":"House made red sauce, oregano, garlic. (no cheese - Add mozzarella $1)",
+                    "pairing":{
+                        "name":"Hangtime Pinot Noir",
+                        "price":"9.00"
+                    },
+                    "price":{
+                        "sm":"",
+                        "lg":"6.00"
+                    }
+                },
+                {
+                    "title":"Mozzarella",
+                    "description":"Red sauce, oregano, red pepper flake, garlic and mozzarella cheese.",
+                    "pairing":{
+                        "name":"Villa Maria Sauvignon Blanc",
+                        "price":"8.00"
+                    },
+                    "price":{
+                        "sm":"",
+                        "lg":"7.50"
+                    }
+                },
+                {
+                    "title":"Pepperoni",
+                    "description":"House made red sauce, mozzarella, pepperoni.",
+                    "pairing":{
+                        "name":"Four Vines Zinfandel",
+                        "price":"8.00"
+                    },
+                    "price":{
+                        "sm":"",
+                        "lg":"7.50"
+                    }
+                },
+                {
+                    "title":"Bianco",
+                    "description":"Garlic and olive oil, mozzarella, arugula with lemon vinaigrette.",
+                    "pairing":{
+                        "name":"Villa Maria Sauvignon Blanc",
+                        "price":"8.00"
+                    },
+                    "price":{
+                        "sm":"",
+                        "lg":"7.50"
+                    }
+                },
+                {
+                    "title":"Pesto",
+                    "description":"Mozzarella and sun-dried tomatoes. (Add arugula - $1)",
+                    "pairing":{
+                        "name":"Oggi Pinot Grigio (house white)",
+                        "price":"6.00"
+                    },
+                    "price":{
+                        "sm":"",
+                        "lg":"8.00"
+                    }
+                },
+                {
+                    "title":"White Bean",
+                    "description":"White bean hummus, mozzarella, pepperoncini, red bell pepper and arugula.",
+                    "pairing":{
+                        "name":"Santa Cristina Orvieto Classico",
+                        "price":"7.00"
+                    },
+                    "price":{
+                        "sm":"",
+                        "lg":"8.50"
+                    }
+                },
+                {
+                    "title":"Black Bean",
+                    "description":"Black bean hummus, caramelized onions, sundried tomatoes, baby portabellas, mozzarella and goat cheese.",
+                    "pairing":{
+                        "name":"Tamari Reserva Malbec",
+                        "price":"8.00"
+                    },
+                    "price":{
+                        "sm":"",
+                        "lg":"8.50"
+                    }
+                }
+            ]
+        },
         "appetizers": {
             "header":{
                 "display":true,
@@ -32,37 +130,11 @@
                     }
                 },
                 {
-                    "title":"Edamame",
-                    "description":"Soybeans steamed, sprinkled with sea salt & drizzle of olive oil.",
+                    "title":"Chips & Salss",
+                    "description":"Corn tortilla chips and medium salsa.",
                     "price":{
                         "sm":"",
-                        "lg":"4.50"
-                    }
-                },
-                {
-                    "title":"SIP Salad",
-                    "disabled":true,
-                    "description":"Mixed greens, red pepper, feta, mandarin wedges and completed with our house made orange balsamic vinaigrette.",
-                    "price":{
-                        "sm":"",
-                        "lg":"7.50"
-                    }
-                },
-                {
-                    "title":"Caprese Salad",
-                    "disabled":true,
-                    "description":"Vine ripened tomatoes and sliced mozzarella lined with fresh arugula. Finished with a drizzle of olive oil, pesto, cracked black pepper & balsamic.",
-                    "price":{
-                        "sm":"",
-                        "lg":"7.50"
-                    }
-                },
-                {
-                    "title":"Arugula Salad",
-                    "description":"Arugula, sun-dried tomatoes, sunflower seeds, shaved Lake County Sharp, finished with lemon vinaigrette.",
-                    "price":{
-                        "sm":"",
-                        "lg":"7.50"
+                        "lg":"4.00"
                     }
                 }
             ]
@@ -71,77 +143,13 @@
             "header":{
                 "display":true,
                 "title":"Build a Board",
-                "description":"Includes Lavash",
+                "description":"Served with crackers",
                 "price":{
                     "sm":"",
                     "lg":""
                 }
             },
             "items":[
-                {
-                    "title":"Lake Country Sharp",
-                    "description":"Wisconsin, cow, hard, aged 12+ months.",
-                    "price":{
-                        "sm":"",
-                        "lg":"3.50"
-                    }
-                },
-                {
-                    "title":"Goat",
-                    "description":"Wisconsin, soft, rolled in dried Italian Seasoning",
-                    "price":{
-                        "sm":"",
-                        "lg":"3.50"
-                    }
-                },
-                {
-                    "title":"Pecorino Romano",
-                    "description":"Italy, sheep, hard, aged 9+ months",
-                    "price":{
-                        "sm":"",
-                        "lg":"3.50"
-                    }
-                },
-                {
-                    "title":"American Blue",
-                    "description":"Wisconsin, cow, creamy and tangy, aged 90 days",
-                    "price":{
-                        "sm":"",
-                        "lg":"3.50"
-                    }
-                },
-                {
-                    "title":"White Cheddar",
-                    "description":"Wisconsin, organic, semi hard, sharp cheddar",
-                    "price":{
-                        "sm":"",
-                        "lg":"3.50"
-                    }
-                },
-                {
-                    "title":"Aged Rembrandt Gouda",
-                    "description":"Holland, hard, ripened for over a year",
-                    "price":{
-                        "sm":"",
-                        "lg":"4.00"
-                    }
-                },
-                {
-                    "title":"Salami",
-                    "description":"Italy, dry cured, low sodium, aged",
-                    "price":{
-                        "sm":"",
-                        "lg":"3.50"
-                    }
-                },
-                {
-                    "title":"Pepperoni",
-                    "description":"you know you love it... yum yum, yum",
-                    "price":{
-                        "sm":"",
-                        "lg":"3.00"
-                    }
-                },
                 {
                     "title":"Black Bean Hummus",
                     "description":"Black beans pureed with lime, cilantro and garlic.",
@@ -167,100 +175,57 @@
                     }
                 },
                 {
-                    "title":"Lavash",
-                    "description":"Flat bread baked into a crispy cracker",
+                    "title":"Lake Country Sharp",
+                    "description":"Wisconsin, cow, hard, aged 12+ months.",
                     "price":{
                         "sm":"",
-                        "lg":"1.50"
-                    }
-                }
-            ]
-        },
-        "pizza": {
-            "header":{
-                "display":true,
-                "title":"Flatbread Pizzas",
-                "description":"",
-                "price":{
-                    "sm":"",
-                    "lg":""
-                }
-            },
-            "items":[
-                {
-                    "title":"Black Bean Mushroom",
-                    "description":"Black bean hummus, caramelized onions, sundried tomatoes, baby portabellas, mozzarella and goat cheese.",
-                    "pairing":{
-                        "name":"Tamari Reserva Malbec",
-                        "price":"8.00"
-                    },
-                    "price":{
-                        "sm":"",
-                        "lg":"8.50"
+                        "lg":"3.50"
                     }
                 },
                 {
-                    "title":"Marinara",
-                    "description":"House made red sauce, oregano, garlic. (no cheese - Add mozzarella $1)",
-                    "pairing":{
-                        "name":"Hangtime Pinot Noir",
-                        "price":"9.00"
-                    },
+                    "title":"Goat",
+                    "description":"Wisconsin, soft, rolled in dried Italian Seasoning",
                     "price":{
                         "sm":"",
-                        "lg":"6.00"
+                        "lg":"3.50"
+                    }
+                },
+
+                {
+                    "title":"White Cheddar",
+                    "description":"Wisconsin, organic, semi hard, sharp cheddar",
+                    "price":{
+                        "sm":"",
+                        "lg":"3.50"
                     }
                 },
                 {
-                    "title":"Bianco",
-                    "description":"Garlic and olive oil, mozzarella, arugula with lemon vinaigrette.",
-                    "pairing":{
-                        "name":"Villa Maria Sauvignon Blanc",
-                        "price":"8.00"
-                    },
+                    "title":"Rembrandt Gouda",
+                    "description":"Holland, hard, ripened for over a year",
                     "price":{
                         "sm":"",
-                        "lg":"7.50"
+                        "lg":"4.00"
+                    }
+                },
+                {
+                    "title":"Salami",
+                    "description":"Italy, dry cured, low sodium, aged",
+                    "price":{
+                        "sm":"",
+                        "lg":"3.50"
                     }
                 },
                 {
                     "title":"Pepperoni",
-                    "description":"House made red sauce, mozzarella, pepperoni.",
-                    "pairing":{
-                        "name":"Four Vines Zinfandel",
-                        "price":"8.00"
-                    },
+                    "description":"you know you love it... yum yum, yum",
                     "price":{
                         "sm":"",
-                        "lg":"7.50"
-                    }
-                },
-                {
-                    "title":"White Bean",
-                    "description":"White bean hummus, mozzarella, pepperoncini, red bell pepper and arugula.",
-                    "pairing":{
-                        "name":"Santa Cristina Orvieto Classico",
-                        "price":"7.00"
-                    },
-                    "price":{
-                        "sm":"",
-                        "lg":"8.50"
-                    }
-                },
-                {
-                    "title":"Pesto",
-                    "description":"Mozzarella and sun-dried tomatoes. (Add arugula - $1)",
-                    "pairing":{
-                        "name":"Oggi Pinot Grigio (house white)",
-                        "price":"6.00"
-                    },
-                    "price":{
-                        "sm":"",
-                        "lg":"8.00"
+                        "lg":"3.00"
                     }
                 }
             ]
         },
+
         "sweets": {
             "header":{
                 "display":true,
@@ -273,29 +238,23 @@
             },
             "items":[
                 {
-                    "title":"Magic Bars",
-                    "description":"Bar cookies with graham cracker crust, chocolate chips, coconut, topped with drizzle o’ chocolate and whipped cream",
-                    "price":{
-                        "sm":"",
-                        "lg":"5.00"
-                    }
-                },
-                {
-                    "title":"Ice Cream Bar",
-                    "description":"Frozen chocolate almond dipped vanilla ice cream bar ",
-                    "price":{
-                        "sm":"",
-                        "lg":"3.00"
-                    }
-                },
-                {
                     "title":"Affogato",
                     "description":"Vanilla ice cream, shot of espresso, crumbled glazed almonds.",
                     "price":{
                         "sm":"",
                         "lg":"4.50"
                     }
+                },
+                {
+                    "title":"Magic Bars",
+                    "description":"Bar cookies with graham cracker crust, chocolate chips, coconut, topped with drizzle o’ chocolate and whipped cream",
+                    "price":{
+                        "sm":"",
+                        "lg":"5.00"
+                    }
                 }
+
+
             ]
         }
     }
