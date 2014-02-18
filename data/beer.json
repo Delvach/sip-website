@@ -40,17 +40,20 @@
             },
             "items":[
                 {
-                    "title":"Boulevard Wheat",
-                    "description":"American style wheat, unfiltered, natural citrus flavor.",
-                    "origin":"Kansas City",
-                    "abv":"4.4",
-                    "ibu":"",
-                    "size":"16oz",
-                    "price":"5.00"
+                    "title":"Imperial Lager",
+                    "description":"<i>Costa Rica</i> - American style lager, light, easy drinking, cheap enought to have two! (4.6%)"
+                },
+                {
+                    "title":"Upslope",
+                    "description":"<i>Boulder</i> - Craft Lager 4.6%, IPA 7.2%, Pale Ale 5.8%, Brown 6.7%"
+                },
+                {
+                    "title":"Hornsby's 'Hard Crisp' Cider",
+                    "description":"<i>Vermont</i> - Adult apple juice, yummy, tasty and quite delicious (5.5%)"
                 },
                 {
                     "title":"SKA 'True Blonde Ale'",
-                    "description":"Medium bodied blonde ale, touch of local honey, citrus hops.",
+                    "description":"Medium bodied blonde ale, touch of local honey, citrus hops. (5.3%)",
                     "origin":"Durango",
                     "abv":"5.3",
                     "ibu":"",
@@ -58,88 +61,21 @@
                     "price":"4.00"
                 },
                 {
-                    "title":"SKA 'Modus Hoperandi IPA'",
-                    "description":"Citrus aromas, pine scents, smooth finish.",
-                    "origin":"Durango",
-                    "abv":"6.8",
-                    "ibu":"",
-                    "size":"",
-                    "price":"4.00"
+                    "title":"Anderson Valley 'Oatmeal' Stoud",
+                    "description":"<i>Boonville</i> - Creamy rich body, dark malt, roasty dry finish (5.8%)"
                 },
                 {
-                    "title":"Uinta Wyld Extra Pale Ale",
-                    "disabled":true,
-                    "description":"Lighter bodied pale ale, aggressively dry hopped, organic.",
-                    "origin":"Salt Lake",
-                    "abv":"",
-                    "ibu":"29",
-                    "size":"",
-                    "price":"4.00"
-                },
-                {
-                    "title":"SKA ESB (english special bitter)",
-                    "disabled":true,
-                    "description":"crisp first sip, hoppy tongue, malty finish",
-                    "origin":"Durango",
-                    "abv":"5.7",
-                    "ibu":"",
-                    "size":"",
-                    "price":"4.00"
-                },
-                {
-                    "title":"Santa Fe Happy Camper IPA",
-                    "disabled":true,
-                    "description":"spicy / citric / floral infusion of hop character, balanced",
-                    "origin":"Santa Fe",
-                    "abv":"6.6",
-                    "ibu":"",
-                    "size":"",
-                    "price":"4.00"
-                },
-                {
-                    "title":"Uinta Baba Black Lager",
-                    "disabled":true,
-                    "description":"robust & smooth, full flavored lager, pitch black in color, organic",
-                    "origin":"Salt Lake",
-                    "abv":"",
-                    "ibu":"32",
-                    "size":"",
-                    "price":"4.00"
-                },
-                {
-                    "title":"Upslope Brown",
-                    "description":"medium bodied, rich & malty, assertive hops, smooth/dry finish",
-                    "origin":"Boulder",
-                    "abv":"6.7",
-                    "ibu":"",
-                    "size":"",
-                    "price":"4.00"
-                },
-                                {
-                    "title":"Santa Fe Brewing 'Java Stout'",
-                    "description":"Full-bodied, roasted malts, chocolate & coffee",
-                    "origin":"Santa Fe",
-                    "abv":"8.0",
-                    "ibu":"",
-                    "size":"",
-                    "price":"4.00"
-                },
-                                {
-                    "title":"Upslope 'Imperial' IPA",
-                    "description":"Subtle flavors of tropical fruit, citrus/pine/hops",
-                    "origin":"Boulder",
-                    "abv":"10.0",
-                    "ibu":"",
-                    "size":"19.2oz",
-                    "price":"10.00"
+                    "title":"Santa Fe Brewing 'Java' Stoud",
+                    "description":"<i>Santa Fe</i> - Full bodied, roasted malts, choclate &amp coffee (8%)"
                 }
+
             ]
         },
         "cocktails":{
             "header":{
                 "display":true,
                 "title":"Cocktails",
-                "description":"",
+                "description":"'<div class='text-center prices'>Our cocktails are made with Jinro' Soju, a neutral grain spirit (24% ABV / 48 proof)</div>",
                 "price":{
                     "sm":"",
                     "lg":"Each"
@@ -147,22 +83,40 @@
             },
             "items":[
                 {
-                    "title":"Margarita / Screwdriver / Martini / Gimlet / Coffee Cocktail / Mimosa",
-                    "description":"",
-                    "origin":"",
-                    "abv":"",
-                    "ibu":"",
-                    "size":"",
-                    "price":"6.00"
+                    "title":"Jin Marg",
+                    "description":"Jinro, margarita mix, lime juice and a splash of OJ"
                 },
                 {
-                    "title":"Creative Cocktails Concocted",
-                    "description":"Ask your server about making a JINRO-based beverage with Zevia soda, Izze sparkling, Coke/Diet Coke, OJ, Sunny D, Pellegrino, or whatever suits your fancy!",
-                    "origin":"",
-                    "abv":"",
-                    "ibu":"",
-                    "size":"",
-                    "price":"6.00"
+                    "title":"Soju Screw",
+                    "description":"Orange juice and Jinro"
+                },
+                {
+                    "title":"Cosmo",
+                    "description":"Cranberry, Jinro and a splash of lime juice"
+                },
+                {
+                    "title":"Bloody Mary",
+                    "description":"Spicy vegetable juice, Jinro, Worchestershire, olives"
+                },
+                {
+                    "title":"Sipmosa",
+                    "description":"Barefoot sparkling buggles and OJ"
+                },
+                {
+                    "title":"Poinsetta",
+                    "description":"Barefoot sparkling bubbles and cranberry juice"
+                },
+                {
+                    "title":"Gimlet",
+                    "description":"Jinro, Crushed ice, lime juice, shaken to perfection and served UP"
+                },
+                {
+                    "title":"Dirty Martini",
+                    "description":"Jinro, olive oil crushed ice, shaken and served UP"
+                },
+                {
+                    "title":"Coffee Cocktails",
+                    "description":"Jinro, chillled coffee, syrup flavor of your choice and a splash of half & half"
                 }
             ]
         }
