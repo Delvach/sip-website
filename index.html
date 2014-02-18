@@ -13,9 +13,10 @@
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
   <script src="js/html5shiv.js"></script>
-  <script src="js/respond.min.js"></script>
 
   <![endif]-->
+  <script src="js/respond.min.js"></script>
+  <script src="js/knockout-3.0.0.js"></script>
 </head>
 <body>
 
@@ -149,6 +150,11 @@
       <div class="col-md-4 pane pane3">
         <h3>Hours</h3>
         <div id="hours"></div>
+
+        <div class="row" data-bind="foreach: hours">
+          <div class="col-xs-6" data-bind="text: day"></div>
+          <div class="col-xs-6" data-bind="text: getHours">
+        </div>
       </div>
     </div>
 
@@ -175,5 +181,9 @@
 <script src="js/jquery-1.10.2.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/base.js"></script>
+<script>
+
+</script>
+
 </body>
 </html>

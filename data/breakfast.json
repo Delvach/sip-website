@@ -1,4 +1,6 @@
 {
+    "pageTitle":"Breakfast Menu",
+    "id":"breakfast",
     "header":{
         "display":false,
         "title":"Breakfast Menu",
@@ -22,39 +24,66 @@
             "items":[
                 {
                     "title":"Fruit",
-                    "price":"1.00"
+                    "price":{
+                        "sm":"",
+                        "lg":"1.00"
+                    }
                 },
                 {
                     "title":"Granola Bar",
-                    "price":"1.25"
+                    "price":{
+                        "sm":"",
+                        "lg":"1.25"
+                    }
                 },
                 {
                     "title":"Cookies",
-                    "price":"2.00"
+                    "price":{
+                        "sm":"",
+                        "lg":"2.00"
+                    }
                 },
                 {
                     "title":"Bagel - Plain",
-                    "price":"1.70"
+                    "price":{
+                        "sm":"",
+                        "lg":"1.70"
+                    }
                 },
                 {
                     "title":"Bagel w/ Butter",
-                    "price":"2.00"
+                    "price":{
+                        "sm":"",
+                        "lg":"2.00"
+                    }
                 },
                 {
                     "title":"Bagel w/ Cream Cheese or PB",
-                    "price":"2.70"
+                    "price":{
+                        "sm":"",
+                        "lg":"2.70"
+                    }
                 },
                 {
                     "title":"Muffin (daily assorted)",
-                    "price":"2.75"
+                    "price":{
+                        "sm":"",
+                        "lg":"2.75"
+                    }
                 },
                 {
                     "title":"Bobo's Oat Bar / Outrageous Bread",
-                    "price":"3.25"
+                    "price":{
+                        "sm":"",
+                        "lg":"3.25"
+                    }
                 },
                 {
                     "title":"Breakfast Burrito (vegetarian option available!)",
-                    "price":"4.75"
+                    "price":{
+                        "sm":"",
+                        "lg":"4.75"
+                    }
                 }
             ]
         }

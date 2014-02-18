@@ -1,4 +1,6 @@
 {
+    "pageTitle":"Coffee Menu",
+    "id":"coffee",
     "header":{
         "display":false,
         "title":"",

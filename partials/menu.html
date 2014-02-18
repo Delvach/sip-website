@@ -1,0 +1,44 @@
+  <h1 class="page-title" data-bind="text: pageTitle"></h1>
+
+  <div id="sip-menu" data-bind="foreach: menuSections">
+
+    <div class="row menu-row menu-subheader-row">
+      <div class="col-sm-6 col-sm-offset-1">
+        <div class="menu-title-box">
+          <h2 data-bind="text: getSectionTitle()"></h2>
+        </div>
+      </div>
+      <div class="col-sm-5 menu-price-outer">
+        <div class="col-xs-6 menu-price-box"></div>
+        <div class="col-xs-6 menu-price-box"></div>
+      </div>
+
+      <div class="col-xs-6"></div>
+      <div class="col-xs-6" data-bind="text: getSectionDescription()"></div>
+    </div>
+
+    <div data-bind="foreach: items">
+      <div class="row menu-row">
+        <div class="col-sm-6 col-sm-offset-1">
+          <div class="menu-title-box">
+            <span><strong class="menu-title" data-bind="text: title"></strong></span>
+          </div>
+          <div class="menu-description-box">
+            <div class="menu-description" data-bind="text: description"></div>
+          </div>
+        </div>
+        <div class="col-sm-5 menu-price-outer">
+          <div class="col-xs-6 menu-price-box" data-bind="visible: !hasSizes()">
+            <!--<span class="menu-price" data-bind="text: getPrice"></span>-->
+          </div>
+
+          <div class="col-xs-6 menu-price-box" data-bind="visible: hasSizes() ">
+            <!--<span class="menu-price" data-bind="text: getSmallPrice"></span>-->
+          </div>
+          <div class="col-xs-6 menu-price-box">
+            <!--<span class="menu-price" data-bind="text: getLargePrice"></span>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

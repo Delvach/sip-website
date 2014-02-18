@@ -9,10 +9,7 @@ $(function() {
 //            console.log(nav_data);
             var curr_page = getPageData(window.location.pathname, nav_data);
             var nav  = $('ul#bs-nav-list');
-            if(curr_page.pageTitle) document.title += ' - ' + curr_page.pageTitle;
-            if(curr_page.pageTitle) {
-                $('#main').prepend($('<h1>',{text:curr_page.pageTitle,class:'page-title'}));
-            }
+
             $.each(nav_data, function(idx, val) {
                 var li = $('<li/>');
                 var a  = $('<a/>')
@@ -26,9 +23,7 @@ $(function() {
                 a.appendTo(li).text(val.title);
                 li.appendTo(nav);
             })
-            if(curr_page.url != '/') {
-                console.log('output');
-            }
+
             if(curr_page.init) {
                 init[curr_page.init]();
                 current_page = curr_page.init;
@@ -39,42 +34,40 @@ $(function() {
 });
 
 
+function ajaxFailHandler(jqxhr, textStatus, error) {
+  var err = textStatus + ', ' + error;
+  console.log( "Request Failed: " + err);
+}
+
 var init = {
     'carousel':function() {
         setTimeout(function() { $("#sip-carousel").carousel({interval:8000}) },1000);
-        $.getJSON('data/hours.json', {cache:false}, function(data) {
-            loadHours('#hours', data);
-        }).fail(function( jqxhr, textStatus, error ) {
-          var err = textStatus + ', ' + error;
-          console.log( "Request Failed: " + err);
-        });
+
+        ko.applyBindings(new FrontPageViewModel());
     },
     'coffee':function() {
-        $.getJSON('data/coffee.json', {cache:false}, function(menu_data) {
-            createMenu('#sip-menu', menu_data);
+        $('#main').load('partials/menu.html', function() {
+            ko.applyBindings(new ProductMenuView('coffee'));
         });
     },
     'breakfast':function() {
-        $.getJSON('data/breakfast.json', {cache:false}, function(menu_data) {
-            createMenu('#sip-menu', menu_data);
+        $('#main').load('partials/menu.html', function() {
+            ko.applyBindings(new ProductMenuView('breakfast'));
         });
     },
     'beer':function() {
-        $.getJSON('data/beer.json', {cache:false}, function(menu_data) {
-            createMenu('#sip-menu', menu_data);
+        $('#main').load('partials/menu.html', function() {
+            ko.applyBindings(new ProductMenuView('beer'));
         });
     },
     'wine':function() {
-        $.getJSON('data/wine.json', {cache:false}, function(menu_data) {
-            createMenu('#sip-menu', menu_data);
+        $('#main').load('partials/menu.html', function() {
+            ko.applyBindings(new ProductMenuView('wine'));
         });
     },
     'food':function() {
-        $.getJSON('data/food.json', {cache:false}, function(menu_data) {
-            createMenu('#sip-menu', menu_data);
-        }).fail(function( jqxhr, textStatus, error ) {
-          var err = textStatus + ', ' + error;
-          console.log( "Request Failed: " + err);
+        $('#main').load('partials/menu.html', function() {
+            ko.applyBindings(new ProductMenuView('food'));
         });
     }
 };
@@ -84,16 +77,16 @@ function initCarousel() {
     setTimeout(function() { $("#sip-carousel").carousel({interval:5000}) },1000);
 }
 
-function loadHours(containerID, data) {
-    var target = $(containerID), row, time;
-    for(day in data) {
-        row = $('<div>',{class:'row'});
-        time = data[day].open + ' - ' + data[day].close;
-        row.append($('<div>',{class:'col-xs-6',text:day}));
-        row.append($('<div>',{class:'col-xs-6',text:time}));
-        target.append(row);
-    }
-}
+//function loadHours(containerID, data) {
+//    var target = $(containerID), row, time;
+//    for(day in data) {
+//        row = $('<div>',{class:'row'});
+//        time = data[day].open + ' - ' + data[day].close;
+//        row.append($('<div>',{class:'col-xs-6',text:day}));
+//        row.append($('<div>',{class:'col-xs-6',text:time}));
+//        target.append(row);
+//    }
+//}
 
 function textToObject(val, _type, _class) {
     if($.type(val) == 'string') {
@@ -101,6 +94,8 @@ function textToObject(val, _type, _class) {
         var options = {text:val};
         if(_class) options.class = _class;
         return $(type, options);
+    } else {
+        console.log('working');
     }
     return val;
 }
@@ -297,9 +292,125 @@ function getBeerData(abv, ibu) {
 
 
 
+/*
+ *  Model definition - business hour
+ */
+function sipHour(_day, _open, _close) {
+  var self = this;
+  self.day    = ko.observable(_day);
+  self.open   = ko.observable(_open);
+  self.close  = ko.observable(_close);
+
+  self.getHours = ko.computed(function() {
+    return self.open() + ' - ' + self.close();
+  });
+}
+
+function menuHeader(data) {
+    var self = this;
+    self.title       = ko.observable(data.title);
+    self.description = ko.observable(data.description);
+    self.display     = ko.observable(data.display);
+    self.size        = ko.observable({
+        'sm':data.price.sm,
+        'lg':data.price.lg
+    });
+    console.log(self.title());
+}
+
+
+function menuSection(_header, _items) {
+    var self = this;
+    self.header = ko.observable(new menuHeader(_header));
+    self.items  = ko.observableArray([]);
+    self.getSectionTitle = ko.computed(function() {
+        return self.header().title();
+    });
+    self.getSectionDescription = function() {
+        return self.header().description();
+    }
+    for(i in _items) {
+        self.items.push(new menuItem(_items[i]));
+    }
+}
 
 
 
+function menuItem(item_data) {
+    var self = this;
+    self.title = ko.observable(item_data.title);
+    self.description = ko.observable(item_data.description);
+
+    self.smallPrice = ko.observable(0);
+    self.largePrice = ko.observable(0);
+    self.price      = ko.observable(0);
+    self.hasSizes   = ko.observable(true);
+
+    if($.type(item_data.price) != 'object') {
+        self.price(item_data.price);
+
+        self.hasSizes(false);
+    } else {
+        self.smallPrice(item_data.price.sm);
+        self.largePrice(item_data.price.lg);
+
+    }
+
+    self.showSinglePrice = ko.computed(function() {
+       return self.hasSizes();
+    });
+
+    self.getSmallPrice = ko.computed(function() {
+        return self.smallPrice() ? '$' + self.smallPrice() : '';
+    });
+
+    self.getLargePrice = ko.computed(function() {
+        return self.largePrice() ? '$' + self.largePrice() : '';
+    });
+
+    self.getPrice = ko.computed(function() {
+        return self.price() ? '$' + self.price() : '';
+    });
+
+}
+
+
+function ProductMenuView(pageID) {
+    var self = this;
+    self.id           = ko.observable(pageID);
+    self.pageTitle    = ko.observable();
+    self.menuHeader   = ko.observable();
+    self.menuSections = ko.observableArray([]);
+    self.getSectionTitle = function() {
+        return self.menuHeader.title;
+    }
+
+    $.getJSON('data/' + pageID + '.json', {cache:false}, function(menu_data) {
+        self.pageTitle(menu_data.pageTitle);
+        document.title += ' - ' + self.pageTitle();
+        self.menuHeader(new menuHeader(menu_data.header));
+        for(i in menu_data.sections) {
+            console.log(menu_data.sections[i]);
+            self.menuSections.push(new menuSection(menu_data.sections[i].header, menu_data.sections[i].items));
+        }
+    }).fail(ajaxFailHandler);
+
+}
+
+
+
+/*
+ *  Front Page View
+ */
+function FrontPageViewModel() {
+    var self = this;
+    self.hours = ko.observableArray([]);
+    $.getJSON('data/hours.json', {cache:false}, function(hours_data) {
+        for(i in hours_data) {
+            self.hours.push(new sipHour(i, hours_data[i].open, hours_data[i].close));
+        }
+    }).fail(ajaxFailHandler);
+}
 
 
 

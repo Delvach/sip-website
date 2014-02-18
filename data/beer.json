@@ -1,4 +1,6 @@
 {
+    "pageTitle":"Beer Menu",
+    "id":"beer",
     "header":{
         "display":false,
         "title":"",

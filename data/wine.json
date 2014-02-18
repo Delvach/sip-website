@@ -1,4 +1,6 @@
 {
+    "pageTitle":"Wine Menu",
+    "id":"wine",
     "header":{
         "display":false,
         "title":"",

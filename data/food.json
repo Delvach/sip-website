@@ -1,4 +1,6 @@
 {
+    "pageTitle":"Food Menu",
+    "id":"food",
     "header":{
         "display":false,
         "title":"",
