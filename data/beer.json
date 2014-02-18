@@ -18,100 +18,14 @@
             "header":{
                 "display":true,
                 "title":"Draft Beers",
-                "description":"",
+                "description":"<div class='text-center prices'>$5 for normal gravity | $6 for high gravity | $4.50 for normal gravity 'Happy Hour'</div><br/>We have five rotating beers on tap.  Some of our regular favorites include <em>Great Divide 'Nomad' Pilsner</em>, <em>Great Divide 'Titan' IPA</em>, <em>Upslope Craft Lager</em>, <em>Odell's 90 Schilling</em>, <em>Odell's 'Cutthroat Porter</em>, <em>Great Divide 'Hercules' Double IPA</em>, <em>Great Divide Hoss Rye Lager</em>, and <em>Uinta Hop Notch IPA</em>",
                 "price":{
                     "sm":"",
                     "lg":"Glass"
                 }
             },
             "items":[
-                {
-                    "title":"Great Divide 'Nomad' Pilsner",
-                    "description":"German malts, floral nose, crisp and balanced",
-                    "origin":"Denver",
-                    "abv":"5.4",
-                    "ibu":"",
-                    "size":"",
-                    "price":"5.00"
-                },
-                {
-                    "title":"Great Divide 'Titan' IPA",
-                    "description":"Aggressively hopped, rich, malty & crisp finish",
-                    "origin":"Denver",
-                    "abv":"7.1",
-                    "ibu":"",
-                    "size":"",
-                    "price":"5.00"
-                },
 
-                {
-                    "title":"Upslope Craft Lager",
-                    "disabled":true,
-                    "description":"Light bodied American lager, crisp malt, subtle Saaz hops",
-                    "origin":"Boulder",
-                    "abv":"2.8",
-                    "ibu":"",
-                    "size":"",
-                    "price":"5.00"
-                },
-                {
-                    "title":"Odell's 90 Schilling",
-                    "description":"Medium bodied amber ale, inspired lighter style Scottish ale",
-                    "origin":"Ft. Collins",
-                    "abv":"5.3",
-                    "ibu":"",
-                    "size":"",
-                    "price":"5.00"
-                },
-                {
-                    "title":"Odell's 'Cutthroat Porter'",
-                    "description":"Dark-roasted malts, hints of chocolate & coffee",
-                    "origin":"Ft. Collins",
-                    "abv":"5.1",
-                    "ibu":"",
-                    "size":"",
-                    "price":"5.00"
-                },
-                {
-                    "title":"Great Divide 'Hercules' Double IPA",
-                    "disabled":false,
-                    "description":"Big hops, balanced, nutty, malty & sweet",
-                    "origin":"Denver",
-                    "abv":"10.0",
-                    "ibu":"",
-                    "size":"",
-                    "price":"7.00"
-                },
-                {
-                    "title":"Great Divide Hoss Rye Lager",
-                    "disabled":true,
-                    "description":"German inspired, rich layered malty notes, crisp & dry",
-                    "origin":"Denver",
-                    "abv":"6.2",
-                    "ibu":"",
-                    "size":"",
-                    "price":"5.00"
-                },
-                {
-                    "title":"Uinta Hop Notch IPA",
-                    "disabled":true,
-                    "description":"Bold, refreshing, abundance of hops, smooth malt profile",
-                    "origin":"Salt Lake",
-                    "abv":"7.3",
-                    "ibu":"",
-                    "size":"",
-                    "price":"5.00"
-                },
-                {
-                    "title":"Guest Tap",
-                    "disabled":false,
-                    "description":"Check out our rotating selection of local brews!",
-                    "origin":"",
-                    "abv":"",
-                    "ibu":"",
-                    "size":"",
-                    "price":""
-                }
             ]
         },
         "cans":{
