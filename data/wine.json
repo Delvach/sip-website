@@ -28,30 +28,7 @@
                 }
             },
             "items":[
-                {
-                    "type":"",
-                    "disabled":true,
-                    "title":"SiP house wine",
-                    "origin":"",
-                    "description":"",
-                    "year":"",
-                    "price":{
-                        "sm":"6.00",
-                        "lg":""
-                    }
-                },
-                {
-                    "type":"Red",
-                    "disabled":true,
-                    "title":"SiP house red",
-                    "origin":"",
-                    "description":"",
-                    "year":"",
-                    "price":{
-                        "sm":"6.00",
-                        "lg":""
-                    }
-                },
+
                 {
                     "type":"Prosecco",
                     "title":"Zonin",

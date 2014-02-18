@@ -12,6 +12,36 @@
         "descriptionFormat":"foodDescription"
     },
     "sections":{
+        "paninis":{
+            "header":{
+                "title":"Grilled Paninis",
+                "description":"<div class='text-center prices'>Includes chips & pickle<br/>$4 pints w/ panini</div>",
+                "price":{
+                    "sm":"",
+                    "lg":""
+                }
+            },
+            "items":[
+                {
+                    "title":"Cheese"
+                },
+                {
+                    "title":"Turkey"
+                },
+                {
+                    "title":"Salami"
+                },
+                {
+                    "title":"Pepperoni"
+                },
+                {
+                    "title":"Veggie Burrito"
+                }
+            ]
+
+        },
+
+
         "pizza": {
             "header":{
                 "display":true,
